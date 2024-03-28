@@ -130,7 +130,7 @@ a {
 .button-accent-2 {
     @include button {
         background-color: var(--accent-color-2);
-        color: var(--white-color);
+        color: var(--primary-color);
     }
 }
 
