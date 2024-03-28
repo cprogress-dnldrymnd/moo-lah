@@ -11,7 +11,7 @@ $section_classes = array(
 $id = $module['id'] != '' ?  $module['id'] : $section_id;
 
 ?>
-<section id="<?= $id ?>" class="hero-banner background-image-cover overlay gradient-overlay <?php $DisplayData->get_classes($section_classes) ?>">
+<section id="<?= $id ?>" class="hero-banner <?php $DisplayData->get_classes($section_classes) ?>">
 	<div class="<?= $container ?>">
 		<div class="inner content-holder <?= $text_align ?> color-white">
 			<div class="row g-4 align-items-center">
