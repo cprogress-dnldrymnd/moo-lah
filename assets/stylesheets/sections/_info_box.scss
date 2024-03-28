@@ -6,17 +6,16 @@ section.info-box-section {
 	}
 	.row {
 		@include respond-to(lg) {
-			--bs-gutter-x: 3.125rem; 
+			--bs-gutter-x: 3.125rem;
 			--bs-gutter-y: 3.125rem;
 		}
 		@include respond-to(md) {
-			--bs-gutter-x: 2rem; 
+			--bs-gutter-x: 2rem;
 			--bs-gutter-y: 2rem;
 		}
 		@include respond-to(xs-sm) {
-			--bs-gutter-x: 1.5rem; 
+			--bs-gutter-x: 1.5rem;
 			--bs-gutter-y: 1.2rem;
-
 		}
 	}
 	.button-group-wrapper {
@@ -28,6 +27,19 @@ section.info-box-section {
 		.swiper {
 			padding-right: 33px;
 			padding-left: 33px;
+		}
+
+		&.info-box-style-1.style-3 {
+			.row {
+				counter-reset: section;
+				.col-lg-4 {
+					.info-box {
+						&:before {
+							content: counter(section) ".";
+						}
+					}
+				}
+			}
 		}
 	}
 	.swiper-slide {
@@ -50,7 +62,7 @@ section.info-box-section {
 		}
 	}
 	.row {
-		[class*='col-'] {
+		[class*="col-"] {
 			@include respond-to(xs-sm) {
 				@include not-last-child {
 					margin-bottom: 30px;
@@ -81,5 +93,4 @@ section.info-box-section {
 		left: -36vw;
 		top: 23vw;
 	}
-
 }
