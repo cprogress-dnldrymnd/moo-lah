@@ -47,13 +47,14 @@ input[type="submit"] {
 @include headings {
 	line-height: 1.4;
 	font-weight: 800;
+	color: var(--accent-color);
 	span {
-		color: var(--accent-color);
+		color: var(--primary-font);
 	}
 	&.hasdots {
 		&:after {
 			content: '.';
-			color: var(--accent-color);
+			color: var(--accent-color-2);
 		}
 	}
 }

@@ -10820,6 +10820,8 @@ h3.heading-svg svg {
 .background-accent {
   background-color: var(--accent-color);
   color: var(--white-color); }
+  .background-accent h1, .background-accent h2, .background-accent h3, .background-accent h4, .background-accent h5, .background-accent h6 {
+    color: inherit; }
 
 .background-text {
   background-color: var(--text-color);
@@ -11096,12 +11098,13 @@ input[type="submit"]:focus {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
-  font-weight: 800; }
+  font-weight: 800;
+  color: var(--accent-color); }
   h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
-    color: var(--accent-color); }
+    color: var(--primary-font); }
   h1.hasdots:after, h2.hasdots:after, h3.hasdots:after, h4.hasdots:after, h5.hasdots:after, h6.hasdots:after {
     content: '.';
-    color: var(--accent-color); }
+    color: var(--accent-color-2); }
 
 h2 {
   font-size: 3.5rem;
