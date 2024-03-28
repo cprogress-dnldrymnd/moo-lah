@@ -11709,8 +11709,22 @@ section.info-box-section {
     counter-reset: section; }
     section.info-box-section .info-box-style-1.style-3 .row .col-lg-4 .info-box {
       display: flex; }
+      section.info-box-section .info-box-style-1.style-3 .row .col-lg-4 .info-box .description-box {
+        text-align: left; }
+      section.info-box-section .info-box-style-1.style-3 .row .col-lg-4 .info-box .button-box {
+        text-align: left;
+        padding-left: 70px;
+        left: 3.75rem; }
       section.info-box-section .info-box-style-1.style-3 .row .col-lg-4 .info-box:before {
-        content: counter(section) "."; }
+        counter-increment: section;
+        content: counter(section) ".";
+        font-size: 45px;
+        font-weight: bold;
+        color: var(--accent-color);
+        width: 70px;
+        display: inline-block;
+        flex: 0 0 70px;
+        text-align: left; }
   section.info-box-section .swiper-slide {
     height: 100% !important; }
   section.info-box-section .info-box .icon-box {

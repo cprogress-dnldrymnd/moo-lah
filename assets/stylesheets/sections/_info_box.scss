@@ -36,8 +36,24 @@ section.info-box-section {
 			.col-lg-4 {
 				.info-box {
 					display: flex;
+					.description-box {
+						text-align: left;
+					}
+					.button-box {
+						text-align: left;
+						padding-left: 70px;
+						left:  3.75rem;
+					}
 					&:before {
+						counter-increment: section;
 						content: counter(section) ".";
+						font-size: 45px;
+						font-weight: bold;
+						color: var(--accent-color);
+						width: 70px;
+						display: inline-block;
+						flex: 0 0 70px;
+						text-align: left;
 					}
 				}
 			}
