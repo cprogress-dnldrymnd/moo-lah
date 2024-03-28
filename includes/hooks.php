@@ -1,6 +1,6 @@
 <?php 
 function action_open_header() {
-	echo '<header id="header">';
+	echo '<header id="header" class="background-accent">';
 }
 add_action('open_header', 'action_open_header');
 

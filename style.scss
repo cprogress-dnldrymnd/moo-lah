@@ -9,37 +9,37 @@ License: GNU General Public License
 /*-----------------------------------------------------------------------------------*/
 /* Vendors
 /*-----------------------------------------------------------------------------------*/
-@import 'bootstrap',
-'aos'
+@import 'assets/vendors/bootstrap/bootstrap',
+'assets/vendors/aos/aos'
 ;
 /*-----------------------------------------------------------------------------------*/
 /* Utils
 /*-----------------------------------------------------------------------------------*/
-@import 'mixins',
-'variables'
+@import 'assets/stylesheets/utils/mixins',
+'assets/stylesheets/utils/variables'
 ;
 /*-----------------------------------------------------------------------------------*/
 /* Base
 /*-----------------------------------------------------------------------------------*/
-@import 'base',
-'fonts',
-'helpers',
-'typography'
+@import 'assets/stylesheets/base/base',
+'assets/stylesheets/base/fonts',
+'assets/stylesheets/base/helpers',
+'assets/stylesheets/base/typography'
 ;
 /*-----------------------------------------------------------------------------------*/
 /* Header & Footer
 /*-----------------------------------------------------------------------------------*/
-@import 'header',
-'footer';
+@import 'assets/stylesheets/sections/header',
+'assets/stylesheets/sections/footer';
 /*-----------------------------------------------------------------------------------*/
 /* Sections
 /*-----------------------------------------------------------------------------------*/
-@import 'hero_banner',
-'not_found',
-'text_bar',
-'logos',
-'two_columns',
-'wysiwyg',
-'info_box',
-'testimonials'
+@import 'assets/stylesheets/sections/hero_banner',
+'assets/stylesheets/sections/not_found',
+'assets/stylesheets/sections/text_bar',
+'assets/stylesheets/sections/logos',
+'assets/stylesheets/sections/two_columns',
+'assets/stylesheets/sections/wysiwyg',
+'assets/stylesheets/sections/info_box',
+'assets/stylesheets/sections/testimonials'
 ;
