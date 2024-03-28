@@ -11131,7 +11131,7 @@ header {
 .header-wrapper {
   z-index: 9;
   padding-top: 60px;
-  padding-bottom: 60px; }
+  padding-bottom: 20px; }
   .header-wrapper .container-fluid {
     --bs-gutter-x: 1.875rem; }
   .header-wrapper .logo-wrapper .site-logo {
