@@ -11128,7 +11128,6 @@ header {
       padding-bottom: 60px; } }
 
 .top-bar-wrapper {
-  background-color: var(--white-color);
   z-index: 9;
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;

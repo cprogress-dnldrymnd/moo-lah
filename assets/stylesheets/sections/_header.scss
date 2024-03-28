@@ -5,7 +5,6 @@ header {
 	}
 }
 .top-bar-wrapper {
-	background-color: var(--white-color);
 	z-index: 9;
 	@include padding-top-bottom(1.75rem);
 	border-bottom: 1px solid var(--border-color);

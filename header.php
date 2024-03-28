@@ -45,7 +45,7 @@
 	<![endif]-->
 		<?php do_action( 'open_header' ) ?>
 		<?php 
-		get_template_part('template-parts/header/content', 'top-bar');
+		get_template_part('template-parts/header/content', 'header');
 		?>
 		<?php get_template_part('template-parts/header/content', 'navigation') ?>
 		<?php do_action( 'close_header' ) ?>
