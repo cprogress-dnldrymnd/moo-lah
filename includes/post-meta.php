@@ -447,6 +447,7 @@ class ModulesFields extends PostMeta {
 			$this->before_module_fields('data-target="style-hero-banner"', 'style-hero-banner'),
 			$this->module_fields(array(
 				$this->_seperator('html_hero', 'CONTENTS', 'data-target="hero-content"'),
+				$this->_image('image', 'Image')->set_classes('hero-content collapse'),
 				$this->_text('heading', 'Heading')->set_classes('hero-content collapse'),
 				$this->_rich_text('description', 'Rich Text')->set_classes('hero-content collapse'),
 				$this->_contact_form()->set_classes('hero-content collapse'),
