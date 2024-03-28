@@ -5,9 +5,9 @@ $Helpers = new Helpers();
 <div class="header-wrapper has-edit">
 	<?= $Helpers->get_edit_url('themes.php?page=crb_carbon_fields_container_company_details.php', 'Edit Logo') ?>
 	<div class="container-fluid">
-		<div class="header-row row align-center justify--space-between">
+		<div class="header-row row justify--space-between">
 			<div class="col">
-				<div class="column-holder left d-flex align-items-center">
+				<div class="column-holder left d-flex ">
 					<div class="logo-wrapper align-center">
 						<?= $Theme_Options->logo ?>
 					</div>
