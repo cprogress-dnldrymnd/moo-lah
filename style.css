@@ -9878,7 +9878,7 @@ a {
   background-color: var(--accent-color-2);
   color: var(--primary-color); }
 
-.button-link {
+.button-link > a, .button-link > span, .button-link > button, .button-link > input[type='submit'] {
   padding: 0;
   font-size: 1.125rem;
   color: var(--accent-color);

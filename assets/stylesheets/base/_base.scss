@@ -2,7 +2,8 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 body {
@@ -61,7 +62,7 @@ textarea {
     select,
     textarea {
         color: var(--primary-color);
-        border:2px solid var(--accent-color);
+        border: 2px solid var(--accent-color);
         &::placeholder {
             color: var(--primary-color);
         }
@@ -106,7 +107,8 @@ a {
             @include transform(translateY(-5px));
         }
     }
-}.button-fullwidth {
+}
+.button-fullwidth {
     @include button {
         width: 100%;
         text-align: center;
@@ -119,13 +121,13 @@ a {
         color: var(--white-color);
     }
 }
-.button-accent, .fsSubmit {
+.button-accent,
+.fsSubmit {
     @include button {
         background-color: var(--accent-color);
         color: var(--white-color);
     }
 }
-
 
 .button-accent-2 {
     @include button {
@@ -135,11 +137,13 @@ a {
 }
 
 .button-link {
-    padding: 0;
-    font-size: 1.125rem;
-    color: var(--accent-color);
-    border-bottom: 1px solid;
-    border-radius: 0;
+    @include button {
+        padding: 0;
+        font-size: 1.125rem;
+        color: var(--accent-color);
+        border-bottom: 1px solid;
+        border-radius: 0;
+    }
 }
 .button-white {
     @include button {
@@ -166,7 +170,7 @@ a {
     .swiper-pagination-bullet {
         margin-left: 5px !important;
         margin-right: 5px !important;
-        background-color: var(--accent-color);;
+        background-color: var(--accent-color);
     }
     @include respond-to(sm-lg) {
         text-align: left;
@@ -237,7 +241,7 @@ a {
                     position: relative;
                     flex: 0 0 1.25rem;
                     &:before {
-                        content: '';
+                        content: "";
                         display: block;
                         height: 2px;
                         background-color: var(--secondary-color);
@@ -246,17 +250,16 @@ a {
                         width: 100%;
                     }
                     &:after {
-                        content: '';
+                        content: "";
                         display: block;
                         width: 2px;
                         height: 100%;
                         background-color: var(--secondary-color);
-                        position: absolute;;
+                        position: absolute;
                         left: calc(50% - 2px);
                         top: 50%;
                         @include transform(translateY(-50%));
                         @include transition(300ms);
-
                     }
                 }
                 &:not(.collapsed) {
@@ -333,7 +336,7 @@ a {
     .wpcf7-not-valid-tip {
         font-size: 8px;
         text-transform: uppercase;
-        letter-spacing: .5px;
+        letter-spacing: 0.5px;
         background-color: #fff;
         left: 0;
         right: 0;
@@ -345,11 +348,13 @@ a {
         border-radius: 0 0 5px 5px;
     }
 
-    input,select, textarea {
+    input,
+    select,
+    textarea {
         width: 100%;
     }
 
-    input[type='submit'] {
+    input[type="submit"] {
         text-align: center;
         font-weight: bold;
         @include justify-content(center);
@@ -374,7 +379,6 @@ a {
         @include respond-to(mobile) {
             margin-top: 0;
         }
-
     }
     .wpcf7-response-output {
         border: none !important;
@@ -382,10 +386,10 @@ a {
         text-align: center !important;
         background-color: #fff !important;
         border-radius: 5px !important;
-        padding: 1rem 3rem!important;
+        padding: 1rem 3rem !important;
         font-size: 1rem !important;
-    } 
-    .wpcf7-spinner{
+    }
+    .wpcf7-spinner {
         border-radius: 50%;
         width: 36px;
         height: 36px;
@@ -403,8 +407,11 @@ a {
 .fsForm {
     margin-bottom: 30px;
     margin-top: 5.625rem;
-    input, select, textarea, button{
-        border: 1px solid #E3E3E3;
+    input,
+    select,
+    textarea,
+    button {
+        border: 1px solid #e3e3e3;
         border-radius: 10px;
         padding: 1.25rem;
         color: #575757;
@@ -418,21 +425,21 @@ a {
         padding-left: 76px;
         background-position: 20px center !important;
         background-size: 20px !important;
-        background-image: url($image-url + '/icon-pound-sign.svg') !important;
+        background-image: url($image-url + "/icon-pound-sign.svg") !important;
     }
     button {
         -webkit-transform: none !important;
         -moz-transform: none !important;
         -ms-transform: none !important;
         -o-transform: none !important;
-        transform: none!important;
+        transform: none !important;
         -webkit-box-shadow: none !important;
         -moz-box-shadow: none !important;
         box-shadow: none !important;
         padding: 15px 20px;
         margin-right: 0;
         @include transition(300ms);
-        &[class*='fsImageOptionButton'] {
+        &[class*="fsImageOptionButton"] {
             flex-direction: row !important;
             @include justify-content(space-between);
             [class*="fsImageOptionImage"] {
@@ -444,7 +451,7 @@ a {
                 -moz-box-shadow: none !important;
                 box-shadow: none !important;
             }
-            [class*='fsImageIcon'] {
+            [class*="fsImageIcon"] {
                 display: none !important;
             }
             .fsOptionLabel {
@@ -455,13 +462,13 @@ a {
                 @include display-flex;
                 @include align-items(center);
                 @include before {
-                    content: '';
+                    content: "";
                     width: 20px;
                     height: 20px;
                     background-color: var(--white-color);
                     display: block;
                     border-radius: 50%;
-                    border: 1px solid #E3E3E3;
+                    border: 1px solid #e3e3e3;
                     @include transition(300ms);
                     margin-right: 15px;
                 }
@@ -477,16 +484,15 @@ a {
             .fsOptionLabel {
                 color: var(--white-color);
                 @include before {
-                    content: '';
+                    content: "";
                     border: 4px solid var(--white-color);
                     background-color: var(--secondary-color);
                 }
             }
         }
-
     }
-    input[type='submit'] {
-        text-align: center; 
+    input[type="submit"] {
+        text-align: center;
         font-weight: bold;
         @include justify-content(center);
         @include respond-to(mobile) {
@@ -511,7 +517,8 @@ a {
         @include justify-content(space-between);
         flex-wrap: wrap;
         width: 100%;
-        .fsLabel, .fieldset-content {
+        .fsLabel,
+        .fieldset-content {
             width: 100%;
             background-image: none !important;
             @include respond-to(md-lg) {
@@ -519,7 +526,6 @@ a {
                 flex: 0 0 48%;
             }
         }
-
     }
     .fsRowBody {
         @include display-flex;
@@ -527,7 +533,11 @@ a {
         flex-wrap: wrap;
         margin-bottom: 1rem;
         width: 100%;
-        > .fsLabel, > input, > select, > textarea, .medical-conditions-wrapper-holder {
+        > .fsLabel,
+        > input,
+        > select,
+        > textarea,
+        .medical-conditions-wrapper-holder {
             width: 100%;
             @include respond-to(md-lg) {
                 width: 48%;
@@ -551,10 +561,13 @@ a {
                 width: 32% !important;
             }
         }
-        
+
         &.fsValidationError {
             background-color: transparent;
-            .fsImageOptionButton, input,  select, textarea {
+            .fsImageOptionButton,
+            input,
+            select,
+            textarea {
                 border: 2px solid #ba0000 !important;
                 &::placeholder {
                     color: #ba0000;
@@ -564,12 +577,11 @@ a {
                 color: #ba0000 !important;
             }
         }
-
     }
     #fsRow4784174-16 {
         display: none !important;
     }
-    .fsSubmit  {
+    .fsSubmit {
         .fsSubmitButton {
             max-width: 285px;
             width: 100%;
@@ -663,7 +675,6 @@ a {
                     top: 9px;
                 }
             }
-
         }
     }
 }
@@ -682,7 +693,7 @@ a {
             margin-bottom: 0;
         }
     }
-    .description-box  {
+    .description-box {
         > * {
             @include not-last-child {
                 margin-bottom: 2.5rem;
@@ -708,9 +719,8 @@ a {
             margin-bottom: 0;
         }
     }
-    .description-box  {
+    .description-box {
         > * {
-
             @include not-last-child {
                 margin-bottom: 1.875rem;
             }
@@ -768,7 +778,7 @@ ul {
         position: absolute;
         bottom: 3.75rem !important;
         left: 3rem;
-        right: 3rem;    
+        right: 3rem;
         @include respond-to(xs-lg) {
             bottom: 2.75rem;
             left: 2.75rem;
@@ -786,15 +796,15 @@ ul {
 
 questionmark {
     &:after {
-        content: '.';
+        content: ".";
         color: var(--accent-color);
-        transform: translate(-134%, -3%) scale(1.180);
+        transform: translate(-134%, -3%) scale(1.18);
         display: inline-block;
     }
 }
 exclamation {
     &:after {
-        content: '.';
+        content: ".";
         color: var(--accent-color);
         transform: translate(-99%, -3%) scale(1.16);
         display: inline-block;
@@ -817,7 +827,7 @@ exclamation {
             border-radius: 50%;
         }
         &:before {
-            content: '';
+            content: "";
             width: 17rem;
             height: 17rem;
             position: absolute;
@@ -870,7 +880,7 @@ exclamation {
 
 .animated-heading {
     .changing-text {
-        display: inline-block; 
+        display: inline-block;
         margin-left: 0;
         margin-right: 0;
         text-align: left;
@@ -907,8 +917,10 @@ exclamation {
         color: inherit;
         letter-spacing: 0;
     }
-    input, select, textarea{
-        border: 1px solid #E3E3E3;
+    input,
+    select,
+    textarea {
+        border: 1px solid #e3e3e3;
         border-radius: 10px;
         padding: 1.25rem;
         color: #575757;
@@ -918,7 +930,6 @@ exclamation {
     }
 }
 .wpcf7-form-control {
-
     label {
         font-weight: 800;
     }
@@ -938,18 +949,18 @@ exclamation {
                     background-color: var(--accent-color);
                     color: var(--white-color);
                     @include before {
-                        content: '';
+                        content: "";
                         border: 4px solid var(--white-color);
                         background-color: var(--secondary-color);
                     }
-                    @include  after {
+                    @include after {
                         @include filter(brightness(0) invert(1));
                     }
                 }
             }
             span {
                 display: block;
-                border: 1px solid #E3E3E3;
+                border: 1px solid #e3e3e3;
                 border-radius: 10px;
                 padding: 1.25rem;
                 width: 100%;
@@ -957,17 +968,16 @@ exclamation {
                 position: relative;
                 @include align-center;
                 @include before {
-                    content: '';
+                    content: "";
                     width: 20px;
                     height: 20px;
                     background-color: var(--white-color);
                     display: block;
                     border-radius: 50%;
-                    border: 1px solid #E3E3E3;
+                    border: 1px solid #e3e3e3;
                     @include transition(300ms);
                     margin-right: 15px;
                 }
-
             }
         }
         @include not-last-child {
@@ -983,78 +993,78 @@ exclamation {
     }
 }
 
-.input-icon{
+.input-icon {
     background-repeat: no-repeat;
-    &.currency  {
+    &.currency {
         padding-left: 76px;
         background-position: 20px center !important;
         background-size: 20px !important;
-        background-image: url($image-url + '/icon-pound-sign.svg') !important;
+        background-image: url($image-url + "/icon-pound-sign.svg") !important;
     }
 }
 .input-icon-wrapper {
     input {
         &[value="Just Myself"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-myself.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-myself.svg") !important;
             }
         }
         &[value="Me & My Partner"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-me-my-partner.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-me-my-partner.svg") !important;
             }
         }
         &[value="My Family"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-my-family.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-my-family.svg") !important;
             }
         }
         &[value="My Mortgage"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-mortgage.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-mortgage.svg") !important;
             }
         }
         &[value="My Family & Mortgage"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-my-family-mortgage.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-my-family-mortgage.svg") !important;
             }
         }
-        &[name="smoke_in_last_12_months"],  &[name="smoker_at_time_insurance_took"] {
+        &[name="smoke_in_last_12_months"],
+        &[name="smoker_at_time_insurance_took"] {
             &[value="Yes"] + span {
-                @include  after {
-                    background-image: url($image-url + '/icon-smoking.svg') !important;
+                @include after {
+                    background-image: url($image-url + "/icon-smoking.svg") !important;
                 }
             }
             &[value="No"] + span {
-                @include  after {
-                    background-image: url($image-url + '/icon-not-smoking.svg') !important;
+                @include after {
+                    background-image: url($image-url + "/icon-not-smoking.svg") !important;
                 }
             }
         }
         &[value="England"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-england.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-england.svg") !important;
             }
         }
         &[value="Scotland"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-scotland.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-scotland.svg") !important;
             }
         }
         &[value="Wales"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-wales.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-wales.svg") !important;
             }
         }
         &[value="N. Ireland"] + span {
-            @include  after {
-                background-image: url($image-url + '/icon-ni.svg') !important;
+            @include after {
+                background-image: url($image-url + "/icon-ni.svg") !important;
             }
         }
-
     }
     .wpcf7-list-item-label {
-        @include  after {
+        @include after {
             width: 35px;
             height: 35px;
             background-repeat: no-repeat;
@@ -1069,10 +1079,10 @@ exclamation {
     .wpcf7-form-control-wrap {
         position: relative;
         @include before {
-            content: '';
+            content: "";
             width: 1px;
             position: absolute;
-            background-color: #E3E3E3;
+            background-color: #e3e3e3;
             left: 60px;
             top: 0;
             bottom: 13px;
@@ -1088,10 +1098,11 @@ exclamation {
     .medical-condition-item {
         margin-top: -1px;
         border-radius: 10px;
-        border: 1px solid #E3E3E3;
+        border: 1px solid #e3e3e3;
         position: relative;
         overflow: hidden;
-        .item-number , .remove{
+        .item-number,
+        .remove {
             padding: 10px 15px;
             font-weight: bold;
             font-size: 25px;
