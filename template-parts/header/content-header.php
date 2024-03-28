@@ -2,7 +2,7 @@
 $Theme_Options = new Theme_Options();
 $Helpers = new Helpers();
 ?>
-<div class="top-bar-wrapper has-edit">
+<div class="header-wrapper has-edit">
 	<?= $Helpers->get_edit_url('themes.php?page=crb_carbon_fields_container_company_details.php', 'Edit Logo') ?>
 	<div class="container-fluid">
 		<div class="header-row row align-center justify--space-between">

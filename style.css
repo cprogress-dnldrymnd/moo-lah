@@ -11127,54 +11127,50 @@ h4 {
 /*-----------------------------------------------------------------------------------*/
 header {
   position: relative; }
-  @media screen and (min-width: 992px) {
-    header {
-      padding-bottom: 60px; } }
 
-.top-bar-wrapper {
+.header-wrapper {
   z-index: 9;
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-  border-bottom: 1px solid var(--border-color); }
-  .top-bar-wrapper .container-fluid {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .header-wrapper .container-fluid {
     --bs-gutter-x: 1.875rem; }
-  .top-bar-wrapper .logo-wrapper .site-logo {
+  .header-wrapper .logo-wrapper .site-logo {
     display: block;
     height: 100%; }
-    .top-bar-wrapper .logo-wrapper .site-logo span {
+    .header-wrapper .logo-wrapper .site-logo span {
       display: block;
       font-weight: bold;
       margin-bottom: 10px;
       font-size: 0.75rem;
       white-space: nowrap; }
-    .top-bar-wrapper .logo-wrapper .site-logo img {
+    .header-wrapper .logo-wrapper .site-logo img {
       width: 105px;
       object-fit: contain; }
     @media screen and (max-width: 767px) {
-      .top-bar-wrapper .logo-wrapper .site-logo {
+      .header-wrapper .logo-wrapper .site-logo {
         max-width: 100px; } }
-    .top-bar-wrapper .logo-wrapper .site-logo.partner {
+    .header-wrapper .logo-wrapper .site-logo.partner {
       margin-left: 4rem; }
-      .top-bar-wrapper .logo-wrapper .site-logo.partner img {
+      .header-wrapper .logo-wrapper .site-logo.partner img {
         height: 31.39px;
         width: auto; }
         @media screen and (max-width: 991px) {
-          .top-bar-wrapper .logo-wrapper .site-logo.partner img {
+          .header-wrapper .logo-wrapper .site-logo.partner img {
             height: 25px; } }
       @media screen and (max-width: 575px) {
-        .top-bar-wrapper .logo-wrapper .site-logo.partner {
+        .header-wrapper .logo-wrapper .site-logo.partner {
           margin-left: 2rem; } }
-  .top-bar-wrapper .button-box {
+  .header-wrapper .button-box {
     margin-bottom: 0 !important; }
-    .top-bar-wrapper .button-box a {
+    .header-wrapper .button-box a {
       padding: .9rem 1.75rem;
       height: 100%;
       line-height: 1; }
   @media screen and (max-width: 575px) {
-    .top-bar-wrapper .header-buttons {
+    .header-wrapper .header-buttons {
       display: none; } }
   @media screen and (max-width: 991px) {
-    .top-bar-wrapper {
+    .header-wrapper {
       position: fixed;
       top: 0;
       left: 0;
@@ -11384,10 +11380,10 @@ header {
 .admin-bar .navbar-wrapper.navbar-wrapper.fixed-header {
   top: 32px; }
 @media screen and (max-width: 991px) {
-  .admin-bar .top-bar-wrapper {
+  .admin-bar .header-wrapper {
     top: 32px; } }
 @media screen and (max-width: 767px) {
-  .admin-bar .top-bar-wrapper {
+  .admin-bar .header-wrapper {
     top: 46px; } }
 
 footer {

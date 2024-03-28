@@ -1,13 +1,9 @@
 header {
 	position: relative;
-	@include respond-to(md-lg) {
-		padding-bottom: 60px;
-	}
 }
-.top-bar-wrapper {
+.header-wrapper {
 	z-index: 9;
-	@include padding-top-bottom(1.75rem);
-	border-bottom: 1px solid var(--border-color);
+	@include padding-top-bottom(60px);
 	.container-fluid {
 		--bs-gutter-x: 1.875rem;
 	}
@@ -292,7 +288,7 @@ header {
 		top: 32px;
 
 	}
-	.top-bar-wrapper {
+	.header-wrapper {
 		@include respond-to(xs-sm) {
 			top: 32px;
 		}
