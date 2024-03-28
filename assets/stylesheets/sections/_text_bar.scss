@@ -4,7 +4,7 @@ section.text-bar {
 		flex-wrap: wrap;
 		line-height: 1.3;
 		span.swiper-slide{
-			font-weight: 800;
+			font-weight: 700;
 			color: var(--primary-color);
 			@include respond-to(xs-md) {
 				text-align: center;

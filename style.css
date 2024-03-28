@@ -9964,7 +9964,7 @@ a {
     color: inherit;
     padding: 1.875rem 0;
     font-size: 1.563rem;
-    font-weight: 800;
+    font-weight: 700;
     border-radius: 0;
     outline: none !important;
     box-shadow: none !important; }
@@ -10560,7 +10560,7 @@ exclamation:after {
       color: #575757; }
 
 .wpcf7-form-control label {
-  font-weight: 800; }
+  font-weight: 700; }
 .wpcf7-form-control .wpcf7-list-item {
   display: block;
   width: 100%;
@@ -11141,7 +11141,7 @@ input[type="submit"]:focus {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--accent-color); }
   h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     color: var(--primary-font); }
@@ -11645,7 +11645,7 @@ section.text-bar h3 {
   flex-wrap: wrap;
   line-height: 1.3; }
   section.text-bar h3 span.swiper-slide {
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary-color); }
     @media screen and (max-width: 1199px) {
       section.text-bar h3 span.swiper-slide {
@@ -11771,7 +11771,7 @@ section.testimonials {
   section.testimonials .rating-box {
     margin-bottom: 2rem; }
     section.testimonials .rating-box .rating {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 2.25rem;
       color: var(--accent-color); }
     section.testimonials .rating-box svg {
@@ -11787,7 +11787,7 @@ section.testimonials {
       background-color: var(--light-gray-darker-color); }
     section.testimonials .testimonial-box .review-title {
       font-size: 1.25rem;
-      font-weight: 800;
+      font-weight: 700;
       color: var(--accent-color); }
     section.testimonials .testimonial-box .review-content {
       font-size: 16px; }
