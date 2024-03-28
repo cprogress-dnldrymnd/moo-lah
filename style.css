@@ -11442,7 +11442,7 @@ section.footer-cta {
   section.footer-cta .inner {
     max-width: 900px; }
   section.footer-cta .circle {
-    background-color: var(--accent-color);
+    background-color: var(--white-color);
     width: 98vw;
     height: 98vw;
     border-radius: 50%;
