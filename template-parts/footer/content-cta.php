@@ -34,7 +34,7 @@ $Helpers = new Helpers();
 						<span><?= do_shortcode( '[phone_number_text]' ) ?></span>
 					</a>
 				</div>
-				<div class="button-box button-accent button-wide-padding">
+				<div class="button-box button-accent-2 button-wide-padding">
 					<a href="/#hero-banner">
 						<span>Request a Callback</span>
 					</a>
