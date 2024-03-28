@@ -9710,12 +9710,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   --white-color: #ffffff;
   --black-color: #000000;
   --border-color: #f1d3c6;
-  --light-gray-color: #F0F1F54A; }
+  --light-gray-color: #fbfbfc; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Base
 /*-----------------------------------------------------------------------------------*/
-html, body {
+html,
+body {
   overflow-x: hidden; }
 
 body {
@@ -9870,7 +9871,11 @@ a {
   background-color: var(--primary-color);
   color: var(--white-color); }
 
-.button-accent > a, .button-accent > span, .button-accent > button, .button-accent > input[type='submit'], .fsSubmit > a, .fsSubmit > span, .fsSubmit > button, .fsSubmit > input[type='submit'] {
+.button-accent > a, .button-accent > span, .button-accent > button, .button-accent > input[type='submit'],
+.fsSubmit > a,
+.fsSubmit > span,
+.fsSubmit > button,
+.fsSubmit > input[type='submit'] {
   background-color: var(--accent-color);
   color: var(--white-color); }
 
@@ -9969,7 +9974,7 @@ a {
       position: relative;
       flex: 0 0 1.25rem; }
       .accordion .accordion-item .accordion-header .accordion-button .icon:before {
-        content: '';
+        content: "";
         display: block;
         height: 2px;
         background-color: var(--secondary-color);
@@ -9977,7 +9982,7 @@ a {
         top: calc(50% - 2px);
         width: 100%; }
       .accordion .accordion-item .accordion-header .accordion-button .icon:after {
-        content: '';
+        content: "";
         display: block;
         width: 2px;
         height: 100%;
@@ -10050,7 +10055,7 @@ a {
 .wpcf7-form .wpcf7-not-valid-tip {
   font-size: 8px;
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   background-color: #fff;
   left: 0;
   right: 0;
@@ -10060,16 +10065,18 @@ a {
   margin-bottom: 13px;
   font-weight: bold;
   border-radius: 0 0 5px 5px; }
-.wpcf7-form input, .wpcf7-form select, .wpcf7-form textarea {
+.wpcf7-form input,
+.wpcf7-form select,
+.wpcf7-form textarea {
   width: 100%; }
-.wpcf7-form input[type='submit'] {
+.wpcf7-form input[type="submit"] {
   text-align: center;
   font-weight: bold;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
   @media screen and (max-width: 575px) {
-    .wpcf7-form input[type='submit'] {
+    .wpcf7-form input[type="submit"] {
       margin-top: 0; } }
 .wpcf7-form label {
   color: var(--white-color);
@@ -10109,13 +10116,19 @@ a {
 .fsForm {
   margin-bottom: 30px;
   margin-top: 5.625rem; }
-  .fsForm input, .fsForm select, .fsForm textarea, .fsForm button {
-    border: 1px solid #E3E3E3;
+  .fsForm input,
+  .fsForm select,
+  .fsForm textarea,
+  .fsForm button {
+    border: 1px solid #e3e3e3;
     border-radius: 10px;
     padding: 1.25rem;
     color: #575757;
     width: 100%; }
-    .fsForm input::placeholder, .fsForm select::placeholder, .fsForm textarea::placeholder, .fsForm button::placeholder {
+    .fsForm input::placeholder,
+    .fsForm select::placeholder,
+    .fsForm textarea::placeholder,
+    .fsForm button::placeholder {
       color: #575757; }
   .fsForm select[name="field124198738"] {
     background-repeat: no-repeat;
@@ -10139,12 +10152,12 @@ a {
     -ms-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms; }
-    .fsForm button[class*='fsImageOptionButton'] {
+    .fsForm button[class*="fsImageOptionButton"] {
       flex-direction: row !important;
       -webkit-justify-content: space-between;
       -ms-flex-pack: space-between;
       justify-content: space-between; }
-      .fsForm button[class*='fsImageOptionButton'] [class*="fsImageOptionImage"] {
+      .fsForm button[class*="fsImageOptionButton"] [class*="fsImageOptionImage"] {
         -webkit-box-ordinal-group: 2;
         -moz-box-ordinal-group: 2;
         -ms-flex-order: 2;
@@ -10156,9 +10169,9 @@ a {
         -webkit-box-shadow: none !important;
         -moz-box-shadow: none !important;
         box-shadow: none !important; }
-      .fsForm button[class*='fsImageOptionButton'] [class*='fsImageIcon'] {
+      .fsForm button[class*="fsImageOptionButton"] [class*="fsImageIcon"] {
         display: none !important; }
-      .fsForm button[class*='fsImageOptionButton'] .fsOptionLabel {
+      .fsForm button[class*="fsImageOptionButton"] .fsOptionLabel {
         -webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
         -ms-flex-order: 1;
@@ -10177,14 +10190,14 @@ a {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center; }
-        .fsForm button[class*='fsImageOptionButton'] .fsOptionLabel:before {
-          content: '';
+        .fsForm button[class*="fsImageOptionButton"] .fsOptionLabel:before {
+          content: "";
           width: 20px;
           height: 20px;
           background-color: var(--white-color);
           display: block;
           border-radius: 50%;
-          border: 1px solid #E3E3E3;
+          border: 1px solid #e3e3e3;
           -webkit-transition: 300ms;
           -moz-transition: 300ms;
           -ms-transition: 300ms;
@@ -10200,17 +10213,17 @@ a {
       .fsForm button[aria-checked="true"] .fsOptionLabel {
         color: var(--white-color); }
         .fsForm button[aria-checked="true"] .fsOptionLabel:before {
-          content: '';
+          content: "";
           border: 4px solid var(--white-color);
           background-color: var(--secondary-color); }
-  .fsForm input[type='submit'] {
+  .fsForm input[type="submit"] {
     text-align: center;
     font-weight: bold;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
     @media screen and (max-width: 575px) {
-      .fsForm input[type='submit'] {
+      .fsForm input[type="submit"] {
         margin-top: 0; } }
   .fsForm .fsLabel {
     font-size: 20px;
@@ -10233,11 +10246,13 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%; }
-    .fsForm fieldset .fsLabel, .fsForm fieldset .fieldset-content {
+    .fsForm fieldset .fsLabel,
+    .fsForm fieldset .fieldset-content {
       width: 100%;
       background-image: none !important; }
       @media screen and (min-width: 992px) {
-        .fsForm fieldset .fsLabel, .fsForm fieldset .fieldset-content {
+        .fsForm fieldset .fsLabel,
+        .fsForm fieldset .fieldset-content {
           width: 48%;
           flex: 0 0 48%; } }
   .fsForm .fsRowBody {
@@ -10252,10 +10267,18 @@ a {
     flex-wrap: wrap;
     margin-bottom: 1rem;
     width: 100%; }
-    .fsForm .fsRowBody > .fsLabel, .fsForm .fsRowBody > input, .fsForm .fsRowBody > select, .fsForm .fsRowBody > textarea, .fsForm .fsRowBody .medical-conditions-wrapper-holder {
+    .fsForm .fsRowBody > .fsLabel,
+    .fsForm .fsRowBody > input,
+    .fsForm .fsRowBody > select,
+    .fsForm .fsRowBody > textarea,
+    .fsForm .fsRowBody .medical-conditions-wrapper-holder {
       width: 100%; }
       @media screen and (min-width: 992px) {
-        .fsForm .fsRowBody > .fsLabel, .fsForm .fsRowBody > input, .fsForm .fsRowBody > select, .fsForm .fsRowBody > textarea, .fsForm .fsRowBody .medical-conditions-wrapper-holder {
+        .fsForm .fsRowBody > .fsLabel,
+        .fsForm .fsRowBody > input,
+        .fsForm .fsRowBody > select,
+        .fsForm .fsRowBody > textarea,
+        .fsForm .fsRowBody .medical-conditions-wrapper-holder {
           width: 48%;
           flex: 0 0 48%; } }
     .fsForm .fsRowBody .fsImageOptionFieldContainer[style="flex-direction: row;"] {
@@ -10271,9 +10294,15 @@ a {
       width: 32% !important; }
     .fsForm .fsRowBody.fsValidationError {
       background-color: transparent; }
-      .fsForm .fsRowBody.fsValidationError .fsImageOptionButton, .fsForm .fsRowBody.fsValidationError input, .fsForm .fsRowBody.fsValidationError select, .fsForm .fsRowBody.fsValidationError textarea {
+      .fsForm .fsRowBody.fsValidationError .fsImageOptionButton,
+      .fsForm .fsRowBody.fsValidationError input,
+      .fsForm .fsRowBody.fsValidationError select,
+      .fsForm .fsRowBody.fsValidationError textarea {
         border: 2px solid #ba0000 !important; }
-        .fsForm .fsRowBody.fsValidationError .fsImageOptionButton::placeholder, .fsForm .fsRowBody.fsValidationError input::placeholder, .fsForm .fsRowBody.fsValidationError select::placeholder, .fsForm .fsRowBody.fsValidationError textarea::placeholder {
+        .fsForm .fsRowBody.fsValidationError .fsImageOptionButton::placeholder,
+        .fsForm .fsRowBody.fsValidationError input::placeholder,
+        .fsForm .fsRowBody.fsValidationError select::placeholder,
+        .fsForm .fsRowBody.fsValidationError textarea::placeholder {
           color: #ba0000; }
       .fsForm .fsRowBody.fsValidationError .fsOptionLabel {
         color: #ba0000 !important; }
@@ -10432,13 +10461,13 @@ ul li:not(:last-child) {
     border: 3px solid var(--secondary-color); }
 
 questionmark:after {
-  content: '.';
+  content: ".";
   color: var(--accent-color);
   transform: translate(-134%, -3%) scale(1.18);
   display: inline-block; }
 
 exclamation:after {
-  content: '.';
+  content: ".";
   color: var(--accent-color);
   transform: translate(-99%, -3%) scale(1.16);
   display: inline-block; }
@@ -10457,7 +10486,7 @@ exclamation:after {
     object-fit: cover;
     border-radius: 50%; }
   .image-box.circle:before {
-    content: '';
+    content: "";
     width: 17rem;
     height: 17rem;
     position: absolute;
@@ -10517,12 +10546,16 @@ exclamation:after {
     text-transform: initial;
     color: inherit;
     letter-spacing: 0; }
-  .get-a-quote-form input, .get-a-quote-form select, .get-a-quote-form textarea {
-    border: 1px solid #E3E3E3;
+  .get-a-quote-form input,
+  .get-a-quote-form select,
+  .get-a-quote-form textarea {
+    border: 1px solid #e3e3e3;
     border-radius: 10px;
     padding: 1.25rem;
     color: #575757; }
-    .get-a-quote-form input::placeholder, .get-a-quote-form select::placeholder, .get-a-quote-form textarea::placeholder {
+    .get-a-quote-form input::placeholder,
+    .get-a-quote-form select::placeholder,
+    .get-a-quote-form textarea::placeholder {
       color: #575757; }
 
 .wpcf7-form-control label {
@@ -10547,7 +10580,7 @@ exclamation:after {
         background-color: var(--accent-color);
         color: var(--white-color); }
         .wpcf7-form-control .wpcf7-list-item label input:checked + span:before {
-          content: '';
+          content: "";
           border: 4px solid var(--white-color);
           background-color: var(--secondary-color); }
         .wpcf7-form-control .wpcf7-list-item label input:checked + span:after {
@@ -10555,7 +10588,7 @@ exclamation:after {
           filter: brightness(0) invert(1); }
     .wpcf7-form-control .wpcf7-list-item label span {
       display: block;
-      border: 1px solid #E3E3E3;
+      border: 1px solid #e3e3e3;
       border-radius: 10px;
       padding: 1.25rem;
       width: 100%;
@@ -10572,13 +10605,13 @@ exclamation:after {
       -webkit-align-items: center;
       align-items: center; }
       .wpcf7-form-control .wpcf7-list-item label span:before {
-        content: '';
+        content: "";
         width: 20px;
         height: 20px;
         background-color: var(--white-color);
         display: block;
         border-radius: 50%;
-        border: 1px solid #E3E3E3;
+        border: 1px solid #e3e3e3;
         -webkit-transition: 300ms;
         -moz-transition: 300ms;
         -ms-transition: 300ms;
@@ -10641,10 +10674,10 @@ exclamation:after {
 .currency-wrapper .wpcf7-form-control-wrap {
   position: relative; }
   .currency-wrapper .wpcf7-form-control-wrap:before {
-    content: '';
+    content: "";
     width: 1px;
     position: absolute;
-    background-color: #E3E3E3;
+    background-color: #e3e3e3;
     left: 60px;
     top: 0;
     bottom: 13px; }
@@ -10656,10 +10689,11 @@ exclamation:after {
   .medical-conditions-wrapper .medical-condition-item {
     margin-top: -1px;
     border-radius: 10px;
-    border: 1px solid #E3E3E3;
+    border: 1px solid #e3e3e3;
     position: relative;
     overflow: hidden; }
-    .medical-conditions-wrapper .medical-condition-item .item-number, .medical-conditions-wrapper .medical-condition-item .remove {
+    .medical-conditions-wrapper .medical-condition-item .item-number,
+    .medical-conditions-wrapper .medical-condition-item .remove {
       padding: 10px 15px;
       font-weight: bold;
       font-size: 25px; }
