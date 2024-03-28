@@ -11103,7 +11103,7 @@ html {
   html body {
     font-family: var(--primary-font);
     color: var(--primary-color);
-    line-height: 1;
+    line-height: 1.5;
     font-weight: 500;
     font-size: 1.125rem; }
   @media screen and (max-width: 991px) {
