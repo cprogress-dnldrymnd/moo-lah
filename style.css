@@ -11610,9 +11610,9 @@ section.hero-banner .image-box {
     object-fit: cover; }
 section.hero-banner h2 {
   margin-bottom: 2rem !important; }
-section.hero-banner .description {
+section.hero-banner .description-box {
   margin-bottom: 2rem; }
-  section.hero-banner .description p:not(:last-child) {
+  section.hero-banner .description-box p:not(:last-child) {
     margin-bottom: 20px; }
 
 section.page-banner {
