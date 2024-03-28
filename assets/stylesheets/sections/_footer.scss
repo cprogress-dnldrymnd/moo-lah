@@ -4,7 +4,6 @@ footer {
 }
 section.footer-cta {
 	@include padding-top-bottom(7.25rem);
-	border-bottom: 6px solid var(--secondary-color);
 	.inner {
 		max-width: 900px;
 	}
