@@ -37,7 +37,7 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 			));
 			?>
 			<?php if ($info_is_slider) { ?>
-				<div class="info-slider-box" data-aos="fade-in">
+				<div class="info-slider-box mb-0" data-aos="fade-in">
 					<div class="swiper swiper-info-slider">
 						<div class="swiper-wrapper">
 						<?php } else { ?>
