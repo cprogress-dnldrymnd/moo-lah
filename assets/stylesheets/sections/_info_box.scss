@@ -34,6 +34,7 @@ section.info-box-section {
 				counter-reset: section;
 				.col-lg-4 {
 					.info-box {
+						display: flex;
 						&:before {
 							content: counter(section) ".";
 						}
