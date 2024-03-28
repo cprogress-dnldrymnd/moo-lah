@@ -69,14 +69,7 @@ header {
 }
 
 .navbar-wrapper.navbar-wrapper {
-	z-index: 9;
-	position: relative;
-	background-color: var(--white-color);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-
+	/*
 	&.fixed-header {
 		position: fixed;
 		top: 0;
@@ -106,7 +99,7 @@ header {
 				}
 			}
 		}
-	}
+	}*/
 
 	.site-logo {
 		height: 55.19px;
