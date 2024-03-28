@@ -11249,12 +11249,12 @@ header {
         margin-bottom: 0; }
         .navbar-wrapper.navbar-wrapper .navbar ul.navbar-nav.navbar-nav > li > a {
           font-size: 1.25rem;
-          color: var(--secondary-color);
+          color: var(--white-color);
           font-weight: bold;
           padding-top: 1.125rem;
           padding-bottom: 1.125rem;
-          padding-left: 2vw;
-          padding-right: 2vw; }
+          padding-left: 1.125rem;
+          padding-right: 1.125rem; }
           .navbar-wrapper.navbar-wrapper .navbar ul.navbar-nav.navbar-nav > li > a svg {
             margin-left: 10px; }
           .navbar-wrapper.navbar-wrapper .navbar ul.navbar-nav.navbar-nav > li > a.active {

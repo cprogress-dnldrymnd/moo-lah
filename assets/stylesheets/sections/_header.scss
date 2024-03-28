@@ -133,10 +133,10 @@ header {
 				margin-bottom: 0;
 				> a {
 					font-size: 1.25rem;
-					color: var(--secondary-color);
+					color: var(--white-color);
 					font-weight: bold;
 					@include padding-top-bottom(1.125rem);
-					@include padding-left-right(2vw);
+					@include padding-left-right(1.125rem);
 					svg {
 						margin-left: 10px;
 					}

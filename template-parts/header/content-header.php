@@ -22,7 +22,7 @@ $Helpers = new Helpers();
 										'container' => false,
 										'menu_class' => '',
 										'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-										'items_wrap' => '<ul id="%1$s" class="navbar-nav m-auto justify--space-between align--center %2$s">%3$s</ul>',
+										'items_wrap' => '<ul id="%1$s" class="navbar-nav m-auto align--center %2$s">%3$s</ul>',
 										'depth' => 2,
 										'walker' => new bootstrap_5_wp_nav_menu_walker()
 									));
