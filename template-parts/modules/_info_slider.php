@@ -73,7 +73,7 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 													'link' => isset($slider['button_' . $slider['button_link_type']]) ? $slider['button_' . $slider['button_link_type']] : '',
 													'link_type' => $slider['button_link_type'],
 													'link_action' => $slider['button_link_action'],
-													'class' => 'button-accent button-fullwidth'
+													'class' => 'button-link'
 												));
 											}
 											?>
@@ -116,7 +116,7 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 									'link' => isset($button['button_' . $button['button_link_type']]) ? $button['button_' . $button['button_link_type']] : '',
 									'link_type' => $button['button_link_type'],
 									'link_action' => $button['button_link_action'],
-									'class' => $button['button_link_color'] . ' button-wide-padding'
+									'class' => $button['button_link_color'] . ' button-link'
 								));
 							}
 						}
