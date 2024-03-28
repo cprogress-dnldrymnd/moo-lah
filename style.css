@@ -11737,7 +11737,7 @@ section.info-box-section {
   section.info-box-section .circle {
     width: 84vw;
     height: 84vw;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-2);
     border-radius: 50%;
     position: absolute;
     left: -36vw;
