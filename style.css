@@ -11438,8 +11438,7 @@ footer {
 
 section.footer-cta {
   padding-top: 7.25rem;
-  padding-bottom: 7.25rem;
-  border-bottom: 6px solid var(--secondary-color); }
+  padding-bottom: 7.25rem; }
   section.footer-cta .inner {
     max-width: 900px; }
   section.footer-cta .circle {
