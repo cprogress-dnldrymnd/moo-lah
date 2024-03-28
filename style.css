@@ -9892,7 +9892,7 @@ a {
 
 .button-white > a, .button-white > span, .button-white > button, .button-white > input[type='submit'] {
   background-color: var(--white-color);
-  color: var(--secondary-color); }
+  color: var(--accent-color); }
 
 .button-white-bordered > a, .button-white-bordered > span, .button-white-bordered > button, .button-white-bordered > input[type='submit'] {
   color: var(--white-color);
