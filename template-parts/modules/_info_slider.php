@@ -29,7 +29,7 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 		<div class="circle" data-aos="zoom-in" data-aos-duration="3000"></div>
 	<?php } ?>
 	<div class="<?= $container ?>">
-		<div class="content-holder <?= $text_align ?>">
+		<div class="content-holder <?= $text_align ?> info-box-<?= $info_slider_style ?>">
 			<?php
 			$DisplayData->heading(array(
 				'heading' => $module['heading'],
