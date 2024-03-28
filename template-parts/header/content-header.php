@@ -38,7 +38,7 @@ $Helpers = new Helpers();
 				<div class="header-buttons col-auto">
 					<div class="column-holder right">
 						<div class="button-group-wrapper justify-flex-end">
-							<div class="button-box button-primary">
+							<div class="button-box button-accent">
 								<a href="<?= do_shortcode('[phone_number_url]') ?>">
 									<span class="icon">
 										<svg xmlns="http://www.w3.org/2000/svg" width="25.719" height="25.766" viewBox="0 0 25.719 25.766">
