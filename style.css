@@ -11551,7 +11551,9 @@ section.hero-banner .contact-form-box {
   margin: auto; }
 section.hero-banner .image-box {
   padding: 50%;
-  position: relative; }
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden; }
   section.hero-banner .image-box img {
     position: absolute;
     left: 0;

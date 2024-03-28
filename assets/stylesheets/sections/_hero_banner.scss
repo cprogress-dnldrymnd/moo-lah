@@ -16,6 +16,8 @@ section.hero-banner {
 	.image-box  {
 	    padding: 50%;
 		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
 		img {
 			position: absolute;
 			left: 0;
