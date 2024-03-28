@@ -38,11 +38,12 @@ section.testimonials {
 		.inner {
 			padding: 4rem;
 			border-radius: 20px;
-			border: 3px solid var(--accent-color);
+			background-color: var(--light-gray-color);
 		}
 		.review-title {
 			font-size: 1.25rem;
 			font-weight: 800;
+			color: var(--accent-color);
 		}
 		.review-content {
 			font-size: 16px;
