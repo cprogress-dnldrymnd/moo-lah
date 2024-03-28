@@ -24,7 +24,7 @@ header {
 				white-space: nowrap;
 			}
 			img {
-				width: 150px;
+				width: 105px;
 				object-fit: contain;
 			}
 			@include respond-to(xs) {
@@ -54,7 +54,7 @@ header {
 			line-height: 1;
 		}
 	}
-	.top-col-button {
+	.header-buttons {
 		@include respond-to(mobile) {
 			display: none;
 		}

@@ -5,38 +5,37 @@ $Helpers = new Helpers();
 <div class="top-bar-wrapper has-edit">
 	<?= $Helpers->get_edit_url('themes.php?page=crb_carbon_fields_container_company_details.php', 'Edit Logo') ?>
 	<div class="container-fluid">
-		<div class="top-row row align-center justify--space-between">
+		<div class="header-row row align-center justify--space-between">
 			<div class="col">
-				<div class="top-col">
-					<div class="column-holder left">
-						<div class="logo-wrapper align-center">
-							<?= $Theme_Options->logo ?>
-						</div>
+				<div class="column-holder left d-flex align-items-center">
+					<div class="logo-wrapper align-center">
+						<?= $Theme_Options->logo ?>
+					</div>
+					<div class="navbar-wrapper">
+						<nav class="navbar navbar-expand-lg">
+							<div class="container">
+								<?= $Theme_Options->alt_logo ?>
+								<div class="collapse navbar-collapse" id="navbarMain">
+									<?php
+									wp_nav_menu(array(
+										'theme_location' => 'header-menu',
+										'container' => false,
+										'menu_class' => '',
+										'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+										'items_wrap' => '<ul id="%1$s" class="navbar-nav m-auto justify--space-between align--center %2$s">%3$s</ul>',
+										'depth' => 2,
+										'walker' => new bootstrap_5_wp_nav_menu_walker()
+									));
+									?>
+								</div>
+							</div>
+						</nav>
 					</div>
 				</div>
-				<div class="navbar-wrapper">
-					<nav class="navbar navbar-expand-lg">
-						<div class="container">
-							<?= $Theme_Options->alt_logo ?>
-							<div class="collapse navbar-collapse" id="navbarMain">
-								<?php
-								wp_nav_menu(array(
-									'theme_location' => 'header-menu',
-									'container' => false,
-									'menu_class' => '',
-									'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-									'items_wrap' => '<ul id="%1$s" class="navbar-nav m-auto justify--space-between align--center %2$s">%3$s</ul>',
-									'depth' => 2,
-									'walker' => new bootstrap_5_wp_nav_menu_walker()
-								));
-								?>
-							</div>
-						</div>
-					</nav>
-				</div>
+
 			</div>
 			<?php if (!wp_is_mobile()) {  ?>
-				<div class="top-col top-col-button col-auto">
+				<div class="header-buttons col-auto">
 					<div class="column-holder right">
 						<div class="button-group-wrapper justify-flex-end">
 							<div class="button-box button-primary">

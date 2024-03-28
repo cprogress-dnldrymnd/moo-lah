@@ -9715,8 +9715,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /* Base
 /*-----------------------------------------------------------------------------------*/
 html, body {
-  overflow-x: hidden;
-  margin: 0 !important; }
+  overflow-x: hidden; }
 
 body {
   color: var(--secondary-color);
@@ -11149,7 +11148,7 @@ header {
       font-size: 0.75rem;
       white-space: nowrap; }
     .top-bar-wrapper .logo-wrapper .site-logo img {
-      width: 150px;
+      width: 105px;
       object-fit: contain; }
     @media screen and (max-width: 767px) {
       .top-bar-wrapper .logo-wrapper .site-logo {
@@ -11172,7 +11171,7 @@ header {
       height: 100%;
       line-height: 1; }
   @media screen and (max-width: 575px) {
-    .top-bar-wrapper .top-col-button {
+    .top-bar-wrapper .header-buttons {
       display: none; } }
   @media screen and (max-width: 991px) {
     .top-bar-wrapper {
