@@ -11772,9 +11772,10 @@ section.testimonials {
     margin-bottom: 2rem; }
     section.testimonials .rating-box .rating {
       font-weight: 800;
-      font-size: 2.25rem; }
+      font-size: 2.25rem;
+      color: var(--accent-color); }
     section.testimonials .rating-box svg {
-      font-size: 2.625rem; }
+      font-size: 2rem; }
   section.testimonials .testimonial-box {
     max-width: 1000px;
     margin-left: auto; }
