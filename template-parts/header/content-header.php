@@ -36,7 +36,7 @@ $Helpers = new Helpers();
 				</div>
 			</div>
 			<?php if (!wp_is_mobile()) {  ?>
-				<div class="top-col top-col-button">
+				<div class="top-col top-col-button col-auto">
 					<div class="column-holder right">
 						<div class="button-group-wrapper justify-flex-end">
 							<div class="button-box button-primary">
