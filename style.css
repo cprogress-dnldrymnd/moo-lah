@@ -9710,7 +9710,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   --white-color: #ffffff;
   --black-color: #000000;
   --border-color: #f1d3c6;
-  --light-gray-color: #fbfbfc; }
+  --light-gray-color: #fbfbfc;
+  --light-gray-darker-color: #F0F1F5; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Base
@@ -11784,7 +11785,7 @@ section.testimonials {
     section.testimonials .testimonial-box .inner {
       padding: 4rem;
       border-radius: 20px;
-      background-color: var(--light-gray-color); }
+      background-color: var(--light-gray-darker-color); }
     section.testimonials .testimonial-box .review-title {
       font-size: 1.25rem;
       font-weight: 800;

@@ -14,6 +14,7 @@ $white-color: #ffffff;
 $black-color: #000000;
 $border-color: #f1d3c6;
 $light-gray-color: #fbfbfc;
+$light-gray-darker-color: #F0F1F5;
 :root {
 	--primary-font: #{$primary-font};
 	--primary-color: #{$primary-color};
@@ -24,5 +25,6 @@ $light-gray-color: #fbfbfc;
 	--black-color: #{$black-color};
 	--border-color: #{$border-color};
 	--light-gray-color: #{$light-gray-color};
+	--light-gray-darker-color: #{$light-gray-darker-color};
 }
 
