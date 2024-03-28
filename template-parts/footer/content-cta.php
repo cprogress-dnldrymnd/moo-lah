@@ -4,7 +4,7 @@ $DisplayData = new DisplayData();
 $Helpers = new Helpers();
 ?>
 
-<section class="footer-cta has-edit background-secondary">
+<section class="footer-cta has-edit background-accent">
 	<?= $Helpers->get_edit_url('themes.php?page=crb_carbon_fields_container_footer_settings.php', 'Edit CTA') ?>
 
 	<div class="circle"></div>
