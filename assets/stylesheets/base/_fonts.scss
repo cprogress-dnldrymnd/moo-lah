@@ -3,5 +3,6 @@
 // -----------------------------------------------------------------------------
 
 $hk_nova_r: ('Light':300, 'Regular':400, 'Medium':500, 'Semibold':600, 'Bold':700, 'Extrabold':800);
+$HansKendrick: ('Regular':400, 'Medium':500, 'Semibold':600, 'Bold':700);
 
-@include font-face('HK Nova R', $font-url + 'hk-nova-r/', 'HKNovaR', normal, $hk_nova_r);
+@include font-face('Hans Kendrick', $font-url + 'HansKendrick/', 'HansKendrick', normal, $hk_nova_r);
