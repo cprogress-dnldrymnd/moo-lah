@@ -107,22 +107,24 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 					</div>
 
 				<?php } else { ?>
-					<div class="button-group-wrapper justify-center">
-						<?php
-						foreach ($buttons as $button) {
-							if ($button['button_link_type']) {
-								$DisplayData->button(array(
-									'link_text' => $button['button_link_text'],
-									'link' => isset($button['button_' . $button['button_link_type']]) ? $button['button_' . $button['button_link_type']] : '',
-									'link_type' => $button['button_link_type'],
-									'link_action' => $button['button_link_action'],
-									'class' => $button['button_link_color'] . ' button-link'
-								));
+					<?php if ($buttons) { ?>
+						<div class="button-group-wrapper justify-center">
+							<?php
+							foreach ($buttons as $button) {
+								if ($button['button_link_type']) {
+									$DisplayData->button(array(
+										'link_text' => $button['button_link_text'],
+										'link' => isset($button['button_' . $button['button_link_type']]) ? $button['button_' . $button['button_link_type']] : '',
+										'link_type' => $button['button_link_type'],
+										'link_action' => $button['button_link_action'],
+										'class' => $button['button_link_color'] . ' button-link'
+									));
+								}
 							}
-						}
-						?>
-					</div>
+							?>
+						</div>
 
+					<?php } ?>
 				<?php } ?>
 
 				</div>
