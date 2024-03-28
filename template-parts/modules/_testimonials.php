@@ -27,7 +27,7 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 				'class' => $text_align
 			));
 			?>
-			<div class="row align-center">
+			<div class="row ">
 				<div class="col-lg-3 text-left text-center-sm">
 					<div class="column-holder">
 						<div class="inner rating-box">
