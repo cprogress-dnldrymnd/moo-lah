@@ -11541,8 +11541,8 @@ body.show-sticky-cta section.cta-sticky {
 /*-----------------------------------------------------------------------------------*/
 /* Sections
 /*-----------------------------------------------------------------------------------*/
-section.hero-banner .inner {
-  max-width: 625px; }
+section.hero-banner .inner h2 {
+  line-height: 1.2; }
 section.hero-banner input[type="submit"] {
   padding: 1.281rem 1rem;
   font-size: 1rem; }

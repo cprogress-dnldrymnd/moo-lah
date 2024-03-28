@@ -1,6 +1,9 @@
 section.hero-banner {
 	.inner {
-		max-width: 625px;
+		h2 {
+			line-height: 1.2;
+
+		}
 	}
 	input[type="submit"] {
 		padding: 1.281rem 1rem;
