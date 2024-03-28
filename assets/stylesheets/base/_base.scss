@@ -729,7 +729,7 @@ a {
 ol {
     li {
         &::marker {
-            color: var(--accent-color);
+            color: var(--accent-color-2);
             font-weight: bold;
         }
         @include not-last-child {
@@ -740,7 +740,7 @@ ol {
 ul {
     li {
         &::marker {
-            color: var(--accent-color);
+            color: var(--accent-color-2);
         }
         @include not-last-child {
             margin-bottom: 10px;
@@ -770,8 +770,8 @@ ul {
         }
     }
     &.style-1 {
-        background-color: var(--primary-color);
-        color: var(--white-color);
+        background-color: var(--light-gray-color);
+        color: var(--primary-color);
     }
     &.style-2 {
         border: 3px solid var(--secondary-color);

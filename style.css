@@ -9709,7 +9709,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   --accent-color-2: #FEE705;
   --white-color: #ffffff;
   --black-color: #000000;
-  --border-color: #f1d3c6; }
+  --border-color: #f1d3c6;
+  --light-gray-color: #F0F1F54A; }
 
 /*-----------------------------------------------------------------------------------*/
 /* Base
@@ -10389,7 +10390,7 @@ a {
   margin-bottom: 3.125rem; }
 
 ol li::marker {
-  color: var(--accent-color);
+  color: var(--accent-color-2);
   font-weight: bold; }
 ol li:not(:last-child) {
   margin-bottom: 10px; }
@@ -10418,8 +10419,8 @@ ul li:not(:last-child) {
         left: 2.75rem;
         right: 2.75rem; } }
   .info-box.style-1 {
-    background-color: var(--primary-color);
-    color: var(--white-color); }
+    background-color: var(--light-gray-color);
+    color: var(--primary-color); }
   .info-box.style-2 {
     border: 3px solid var(--secondary-color); }
 
