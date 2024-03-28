@@ -9706,6 +9706,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   --primary-color: #060B10;
   --secondary-color: #01006C;
   --accent-color: #019292;
+  --accent-color-2: #FEE705;
   --white-color: #ffffff;
   --black-color: #000000;
   --border-color: #f1d3c6; }
@@ -9871,6 +9872,10 @@ a {
 
 .button-accent > a, .button-accent > span, .button-accent > button, .button-accent > input[type='submit'], .fsSubmit > a, .fsSubmit > span, .fsSubmit > button, .fsSubmit > input[type='submit'] {
   background-color: var(--accent-color);
+  color: var(--white-color); }
+
+.button-accent-2 > a, .button-accent-2 > span, .button-accent-2 > button, .button-accent-2 > input[type='submit'] {
+  background-color: var(--accent-color-2);
   color: var(--white-color); }
 
 .button-white > a, .button-white > span, .button-white > button, .button-white > input[type='submit'] {

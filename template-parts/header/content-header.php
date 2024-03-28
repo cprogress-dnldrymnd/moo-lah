@@ -49,7 +49,7 @@ $Helpers = new Helpers();
 									<span><?= do_shortcode('[phone_number_text]') ?></span>
 								</a>
 							</div>
-							<div class="button-box button-accent">
+							<div class="button-box button-accent-2">
 								<a href="/get-life-insurance/">
 									<span>Get a Quote</span>
 								</a>
