@@ -1,0 +1,13 @@
+<?php 
+$gallery = $page_component['gallery'];
+$Gallery = new Gallery();
+if($gallery) {
+	?>
+	<section class="gallery" id="<?= $section_id ?>">
+		<div class="container-fluid">
+			<div class="row">
+				<?= $Gallery->gallery($gallery) ?>
+			</div>
+		</div>
+	</section>
+<?php } ?>

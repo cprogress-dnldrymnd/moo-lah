@@ -1,0 +1,260 @@
+section.grid-section {
+	padding: 12px;
+	overflow: hidden;
+	.services-grid {
+		h3 {
+			text-transform: uppercase;
+		}
+	}
+	.row {
+		@include respond-to(sm-lg) {
+			--bs-gutter-x: 12px;
+			--bs-gutter-y: 12px;
+		}
+		@include respond-to(xs) {
+			--bs-gutter-x: 9px;
+			--bs-gutter-y: 9px;
+		}
+	}
+	
+	.grid-box {
+		position: relative;
+		background-color: var(--secondary-color);
+		overflow: hidden;
+		.grid-inner  {
+			@include transition(300ms);
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			left: 0;
+			z-index: 2;
+
+			h3 {
+				margin-bottom: 0;
+
+				@include respond-to(small-lg) {
+					font-size: 2rem;
+				}
+				@include respond-to(mobile-md) {
+					font-size: 1.4rem;
+				}
+				@include respond-to(mobile) {
+					font-size: 1.462rem;
+				}
+				.text {
+					@include respond-to(mobile) {
+						margin-right: 5%;
+					}
+				}
+			}
+			a {
+				font-weight: 400;
+				@include align-items(flex-end);
+				@include display-flex;
+				> span {
+					color: var(--white-color);
+				}
+				.text {
+					flex-grow: 1;
+				}
+				.icon-con {
+					text-align: right;
+					flex-grow: 1;
+					svg {
+						color: var(--white-color);
+					}
+				}
+				
+			}
+			@include respond-to(mobile-lg) {
+				padding: 25px;
+			}
+			@include respond-to(mobile) {
+				padding: 12px;
+			}
+		}
+		.grid-image {
+			@include absolute-corner;
+			overflow: hidden;
+			img, video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&:before {
+				content: '';
+				@include absolute-corner;
+				z-index: 1;
+			}
+
+		}
+		@include on-event {
+			.grid-inner {
+				@include transform(translateY(-5px));
+			}
+		}
+	}
+	.col-lg-6 {
+		.grid-box {
+			padding: calc(45% /2);
+		}
+		&.col-md-4 {
+			.grid-box {
+				@include respond-to(xs-sm) {
+					padding: 50%;
+				}
+			}
+		}
+	}
+
+	.col-lg-3 {
+		.grid-box {
+			padding: 50%;
+		}
+
+	}
+	
+	.col-social-1 {
+		@include respond-to(xs) {
+			margin-bottom: -50%;
+		}
+		.grid-box {
+			@include respond-to(xs) {
+				padding: calc(100% + 6px) 50% !important;
+			}
+		}
+	}
+	.col-social-3 {
+		
+		@include respond-to(xs) {
+			transform: translateX(100%);
+		}
+	}
+	.style-2 {
+		.grid-inner  {
+			a {
+				font-size: 2rem;
+				font-weight: 300;
+				.prefix {
+					display: block;
+					font-weight: 300;
+					font-size: 1rem;
+					color: var(--white-color);
+					letter-spacing: 0.8px;
+				}
+			}
+			svg {
+				margin-bottom: 0 !important;
+			}
+			.text {
+				display: none;
+				@include respond-to(lg) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.col-testimonial {
+		.grid-box {
+			svg {
+				font-size: 2.25rem;
+				margin-bottom: 20px;
+			}
+			.swiper-slider {
+				padding-bottom: 30px;
+			}
+			.testimonial-box {
+				p {
+					font-family: var(--heading-font);
+					font-weight: 200;
+					font-size: 2rem;
+					letter-spacing: 1.6px;
+
+					@include respond-to(mobile-md) {
+						font-size: 1.4rem;
+						letter-spacing: 0.95px;
+					}
+					@include respond-to(mobile) {
+						font-size: 1.462rem;
+					}
+				}
+				@include respond-to(md-lg) {
+					max-width: 630px;
+				}
+				@include respond-to(xs-sm) {
+					text-align: center;
+				}
+				@include respond-to(mobile) {
+					max-width: 300px;
+					margin: auto;
+				}
+			}
+			.swiper-pagination {
+				@include respond-to(xs-sm) {
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+	.style-3 {
+		.swiper {
+			padding-bottom: 30px;
+			@include respond-to(xs-sm) {
+				text-align: center;
+			}
+		}
+		&.col-md-12 {
+			.grid-box {
+				padding: 5%;
+				height: 100%;
+				@include display-flex;
+				@include align-items(flex-end);
+				.grid-inner {
+					padding: 0;
+					position: static;
+
+				}
+			}
+		}
+		&.col-md-4 {
+			@include respond-to(md-lg) {
+				.grid-box {
+					padding: 5%;
+					height: 100%;
+					@include display-flex;
+					@include align-items(flex-end);
+					.grid-inner {
+						padding: 0;
+						position: static;
+						svg {
+							font-size: 2.25rem;
+							margin-bottom: 20px;
+						}
+						.swiper-slider {
+							padding-bottom: 30px;
+						}
+						.testimonial-box {
+							max-width: 630px;
+							p {
+								font-family: var(--heading-font);
+								font-weight: 200;
+								font-size: 2rem;
+								letter-spacing: 1.6px;
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+	@include respond-to(sm-lg) {
+		padding: 12px;
+	}
+	@include respond-to(xs) {
+		padding: 9px;
+	}
+
+}

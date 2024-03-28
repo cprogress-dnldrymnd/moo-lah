@@ -1,0 +1,16 @@
+section.logos {
+	.heading-box {
+		margin-bottom: 3.125rem;
+	}
+	.swiper-slide {
+		height: 100% !important;
+	}
+	.logo-box {
+		.logo-item {
+			padding: 15px;
+			img {
+				max-height: 50px;
+			}
+		}
+	}
+}

@@ -1,0 +1,284 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+.col-md-center {
+	@include respond-to("md") {
+		float: none;
+		margin: 0 auto;
+	}
+}
+.col-sm-center {
+	@include respond-to("sm") {
+		float: none;
+		margin: 0 auto;
+	}
+}
+.col-xs-center {
+	@include respond-to("xs") {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+.col-center {
+	float: none;
+	margin: auto !important;
+}
+
+.container {
+	position: relative;
+	@media (min-width: 1500px) {
+		max-width: 1450px;
+	}
+	&.small-container {
+		max-width: 1104px;
+	}
+	&.extra-small-container {
+		@include respond-to(md-lg) {
+			max-width: 860px;
+			
+		}
+	}
+}
+@include respond-to(xs-sm) {
+	.swap-column-xs {
+		[class*="col-"] {
+			&:first-child {
+				order: 2;
+			}
+		}
+	}
+}
+
+h3 {
+	&.heading-svg {
+		svg {
+			width: 5.3rem;
+			margin-top: -0.3rem;
+		}
+	}
+}
+.heading-svg {
+	flex-wrap: wrap;
+	svg {
+		width: 7.5rem;
+		margin-top: -0.4rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		& + questionmark {
+			margin-left: -1rem;
+		}
+	}
+
+}
+.zoom-on-hover {
+	overflow: hidden;
+	position: relative;
+	img {
+		@include transition(300ms);
+		@include on-event {
+			@include transform(scale(1.1));
+		}
+	}
+}
+.description-box  {
+	> * {
+		@include last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.page-title {
+	display: none;
+}
+.background-primary {
+	background-color: var(--primary-color);
+	color: var(--white-color);
+}
+.background-secondary {
+	background-color: var(--secondary-color);
+	color: var(--white-color);
+	.cls-1 {
+		fill: var(--white-color);
+	}
+}
+.background-accent {
+	background-color: var(--accent-color);
+	color: var(--white-color);
+}
+.background-text {
+	background-color: var(--text-color);
+	color: var(--white-color);
+}
+//Background Image
+.background-image {
+	background-image: var(--bg-image);
+	background-size: var(--bg-size);
+	background-position: var(--bg-position);
+}
+//Alignments
+.centered {
+	@include centered;
+}
+.align-center {
+	@include align-center;
+}
+.align--center {
+	@include align-items(center);
+}
+.justify-center {
+	@include justify(center);
+}
+
+.justify-flex-end {
+	@include justify(end);
+}
+.justify-flex-start {
+	@include justify(start);
+}
+.justify-space-evenly {
+	@include justify(space-evenly);
+}
+.justify--space-evenly {
+	@include justify(space-evenly,false);
+}
+.justify-space-between {
+	@include justify(space-between);
+}
+.justify--space-between {
+	@include justify(space-between,false);
+}
+//Overlays
+.overlay {
+	position: relative;
+	@include before {
+		@include absolute-corner;
+		content: '';
+	}
+	> div {
+		position: relative;
+	}
+}
+.gradient-overlay {
+	@include before {
+		background: transparent linear-gradient(180deg, #010054BF 0%, #01006C80 100%);
+	}
+}
+.primary-overlay {
+	@include before {
+		background-color: rgba(1, 0, 108, 0.75);
+	}
+}
+//text-color
+.color-white {
+	color: var(--white-color) !important;
+}
+.color-black {
+	color: var(--black-color) !important;
+}
+.color-primary {
+	color: var(--primary-color) !important;
+}
+.color-secondary {
+	color: var(--secondary-color) !important;
+}
+.color-accent {
+	color: var(--accent-color) !important;
+}
+//text-align
+.text-right {
+	text-align: right !important;
+}
+//flex
+.inner-flex {
+	@include display-flex;
+}
+
+.pt-extra-small {
+	padding-top: 2.185rem;
+}
+.pb-extra-small {
+	padding-bottom: 2.185rem;
+}
+
+.pt-small {
+	padding-top: 3rem;
+}
+.pb-small {
+	padding-bottom: 3rem;
+}
+.pt-medium {
+	padding-top: 4rem;
+}
+.pb-medium {
+	padding-bottom: 4rem;
+}
+.pt-large {
+	padding-top: 5.625rem;
+}
+.pb-large {
+	padding-bottom: 5.625rem;
+}
+.pt-extra-large {
+	padding-top: 8rem;
+}
+.pb-extra-large {
+	padding-bottom: 8rem;
+}
+
+.image {
+	background-position: center;
+}
+.background-fixed {
+	background-attachment: fixed;
+}
+
+.small-width {
+	max-width: 400px;
+	@include margin-left-right(auto);
+}
+.medium-width {
+	max-width: 570px;
+	@include margin-left-right(auto);
+}
+.extra-small-padding {
+	padding: 1rem;
+}
+.small-padding {
+	padding: 2rem;
+}
+.medium-padding {
+	padding: 3rem;
+}
+.large-padding {
+	padding: 4rem;
+}
+.extra-large-padding {
+	padding: 5rem;
+}
+
+.w100  {
+	width: 100%;
+}
+
+.background-image-cover {
+	background-size: cover;
+	background-position: center;
+}
+.text-left {
+	text-align: left !important;
+}
+.text-center {
+	.heading-svg {
+		@include justify-content(center);
+	}
+}
+@include respond-to(xs-sm) {
+	.text-center-sm {
+		text-align: center !important;
+	}
+	.justify-center-sm {
+		@include justify-content(center);
+	}
+}

@@ -1,0 +1,140 @@
+
+section.contact-form {
+	@include pt-pb(50px);
+	.contact-form-holder {
+		max-width: 600px;
+		margin: auto;
+		.button-accent {
+			position: relative;
+		}
+		.wpcf7-spinner {
+			position: absolute;
+			right: 10px;
+			background-color: var(--black-color);
+			margin: 0;
+			@include respond-to(mobile-lg) {
+				bottom: 30px;
+			}
+			@include respond-to(mobile) {
+				bottom: 23px;
+			}
+		}
+		input[type='submit'] {
+			margin-bottom: 10px;
+
+		}
+	}
+	@include respond-to(xs) {
+		padding-top: 0;
+	}
+	&.contact-form-slider {
+		@include transition(300ms);
+		@include transform(translateX(100%));
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--primary-color);
+		z-index: 9999999;
+		overflow: auto;
+		padding: 50px 20px 20px;
+		@include respond-to(md-lg) {
+			max-width: 450px;
+			z-index: 9999999999;
+		}
+		@include respond-to(xs-sm) {
+			max-width: 100%;
+			width: 100%;
+			z-index: 999;
+			padding: 115px 0 20px 0;
+		}
+		&.show-slider {
+			transform: translateX(0);
+		}
+		&::-webkit-scrollbar {
+			width: 7px;
+			height: 7px;
+		}
+		&::-webkit-scrollbar-button {
+			width: 0px;
+			height: 0px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #1691c5;
+			border: 0px none #ffffff;
+			border-radius: 0px;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background: #ffffff;
+		}
+		&::-webkit-scrollbar-thumb:active {
+			background: #000000;
+		}
+		&::-webkit-scrollbar-track {
+			background: #ffffff;
+			border: 0px none #ffffff;
+			border-radius: 0px;
+		}
+		&::-webkit-scrollbar-track:hover {
+			background: #666666;
+		}
+		&::-webkit-scrollbar-track:active {
+			background: #333333;
+		}
+		&::-webkit-scrollbar-corner {
+			background: transparent;
+		}
+
+		//
+		&::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+		&::-webkit-scrollbar-button {
+			width: 0px;
+			height: 0px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #393d46;
+			border: 0px none #ffffff;
+			border-radius: 0px;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background: #ffffff;
+		}
+		&::-webkit-scrollbar-thumb:active {
+			background: #000000;
+		}
+		&::-webkit-scrollbar-track {
+			background: #ffffff;
+			border: 0px none #ffffff;
+			border-radius: 0px;
+		}
+		&::-webkit-scrollbar-track:hover {
+			background: #666666;
+		}
+		&::-webkit-scrollbar-track:active {
+			background: #333333;
+		}
+		&::-webkit-scrollbar-corner {
+			background: transparent;
+		}
+		textarea {
+			@include respond-to(mobile) {
+				height: 70px;
+			}
+		}
+
+	}
+}
+
+.admin-bar {
+	section.contact-form {
+		&.contact-form-slider {
+			@include respond-to(xs-sm) {
+				padding: 60px 0 20px 0;
+			}
+		}
+	}
+} 
+

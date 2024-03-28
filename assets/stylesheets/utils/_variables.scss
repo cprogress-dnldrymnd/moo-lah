@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+$base-url: './assets/' !default;
+$image-url: './assets/images/' !default;
+$font-url: './assets/fonts/' !default;
+
+$primary-font: 'HK Nova R', sans-serif;
+$primary-color: #000545;
+$secondary-color: #01006C;
+$accent-color: #FF5003;
+$white-color: #ffffff;
+$black-color: #000000;
+$border-color: #f1d3c6;
+:root {
+	--primary-font: #{$primary-font};
+	--primary-color: #{$primary-color};
+	--secondary-color: #{$secondary-color};
+	--accent-color: #{$accent-color};
+	--white-color: #{$white-color};
+	--black-color: #{$black-color};
+	--border-color: #{$border-color};
+}
+

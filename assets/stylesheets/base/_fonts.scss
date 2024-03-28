@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+$hk_nova_r: ('Light':300, 'Regular':400, 'Medium':500, 'Semibold':600, 'Bold':700, 'Extrabold':800);
+
+@include font-face('HK Nova R', $font-url + 'hk-nova-r/', 'HKNovaR', normal, $hk_nova_r);

@@ -1,0 +1,14 @@
+section.two-columns {
+	.accordion-box {
+		max-width: 650px;
+	}
+	.row {
+		[class*='col-'] {
+			@include respond-to(xs-sm) {
+				@include first-child {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+	}
+}

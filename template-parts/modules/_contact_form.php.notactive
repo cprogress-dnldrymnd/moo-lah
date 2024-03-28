@@ -1,0 +1,14 @@
+<?php 
+$DisplayData = new DisplayData;
+$ContactForms = new ContactForms();
+$contact_form = $page_component['contact_form'];
+if($contact_form) {
+	?>
+	<section class="contact-form">
+		<div class="container small-container">
+			<div class="contact-form-holder">
+				<?= $ContactForms->contactforms($contact_form) ?>
+			</div>
+		</div>
+	</section>
+	<?php } ?>

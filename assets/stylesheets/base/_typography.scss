@@ -1,0 +1,83 @@
+/**
+ * Basic typography style for copy text
+*/
+html {
+	font-size: 16px;
+	body {
+		font-family: var(--primary-font);
+		color: var(--secondary-color);
+		line-height: 1;
+		font-weight: 300;
+		font-size: 1.125rem;
+	}
+	@include respond-to('xs-sm') {
+		font-size: 15px;
+	}
+
+	@include respond-to('xs') {
+		font-size: 14px;
+	}
+
+	@include respond-to('mobile') {
+		font-size: 13px;
+	}
+}
+
+a {
+	transition: all 500ms ease;
+	line-height: 1.2
+}
+p, li {
+	line-height: 1.6;
+	@include respond-to(mobile) {
+		font-size: 14px;
+	}
+}
+p {
+	margin-bottom: 2.5rem;
+}
+a,
+button,
+input[type="submit"] {
+	@include on-event() {
+		outline: none !important;
+	}
+}
+
+@include headings {
+	line-height: 1.4;
+	font-weight: 800;
+	span {
+		color: var(--accent-color);
+	}
+	&.hasdots {
+		&:after {
+			content: '.';
+			color: var(--accent-color);
+		}
+	}
+}
+h2 {
+	font-size: 3.5rem;
+	margin-bottom: 2.5rem;
+	&.smaller {
+		font-size: 2.75rem;
+	}
+}
+h3 {
+	font-size: 2.438rem;
+	&.smaller {
+		font-size: 2.188rem;
+	}
+}
+h4 {
+	font-size: 1.563rem;
+}
+.smaller {
+	h2 {
+		font-size: 2.75rem;
+	}
+	h3 {
+		font-size: 2.188rem;
+	}
+}

@@ -1,0 +1,23 @@
+section.not-found {
+	@include padding-top-bottom(50px);
+	@include display-flex;
+	@include align-items(center);
+	h1 {
+		font-size: 19rem;
+		font-weight: bold;
+		letter-spacing: 20px;
+		color: var(--primary-color);
+		@include respond-to(mobile) {
+			font-size: 11rem;
+			letter-spacing: 2px;
+		}
+	}
+	p {
+		color: var(--primary-color);
+		font-size: 1.25rem;
+		margin-bottom: 40px;
+	}
+	@include respond-to(mobile-lg) {
+		height: calc(100vh );
+	}
+}
