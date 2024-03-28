@@ -11755,7 +11755,8 @@ section.info-box-section {
     border-radius: 50%;
     position: absolute;
     left: -36vw;
-    top: 23vw; }
+    top: 32vw;
+    border: 20px solid; }
 
 section.testimonials {
   border-top: 1px solid var(--border-color); }
