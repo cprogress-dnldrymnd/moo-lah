@@ -9875,7 +9875,7 @@ a {
 
 .button-accent-2 > a, .button-accent-2 > span, .button-accent-2 > button, .button-accent-2 > input[type='submit'] {
   background-color: var(--accent-color-2);
-  color: var(--white-color); }
+  color: var(--primary-color); }
 
 .button-white > a, .button-white > span, .button-white > button, .button-white > input[type='submit'] {
   background-color: var(--white-color);
