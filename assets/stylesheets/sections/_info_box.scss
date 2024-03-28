@@ -28,16 +28,16 @@ section.info-box-section {
 			padding-right: 33px;
 			padding-left: 33px;
 		}
+	}
 
-		&.info-box-style-1.style-3 {
-			.row {
-				counter-reset: section;
-				.col-lg-4 {
-					.info-box {
-						display: flex;
-						&:before {
-							content: counter(section) ".";
-						}
+	.info-box-style-1.style-3 {
+		.row {
+			counter-reset: section;
+			.col-lg-4 {
+				.info-box {
+					display: flex;
+					&:before {
+						content: counter(section) ".";
 					}
 				}
 			}

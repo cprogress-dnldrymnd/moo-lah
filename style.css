@@ -11705,11 +11705,11 @@ section.info-box-section {
     section.info-box-section .info-slider-box .swiper {
       padding-right: 33px;
       padding-left: 33px; }
-    section.info-box-section .info-slider-box.info-box-style-1.style-3 .row {
+    section.info-box-section .info-slider-box .info-box-style-1.style-3 .row {
       counter-reset: section; }
-      section.info-box-section .info-slider-box.info-box-style-1.style-3 .row .col-lg-4 .info-box {
+      section.info-box-section .info-slider-box .info-box-style-1.style-3 .row .col-lg-4 .info-box {
         display: flex; }
-        section.info-box-section .info-slider-box.info-box-style-1.style-3 .row .col-lg-4 .info-box:before {
+        section.info-box-section .info-slider-box .info-box-style-1.style-3 .row .col-lg-4 .info-box:before {
           content: counter(section) "."; }
   section.info-box-section .swiper-slide {
     height: 100% !important; }
