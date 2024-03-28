@@ -36,6 +36,40 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 				'data_aos' => 'fade-up'
 			));
 			?>
+			<?php if (!$custom_button && $info_slider_style == 'style-1 style-3') { ?>
+				<div class="button-group-wrapper justify-center">
+					<div class="button-box button-white button-wide-padding">
+						<a href="/get-life-insurance/">
+							<span>Get a Quote</span>
+						</a>
+					</div>
+					<div class="button-box button-accent-2 button-wide-padding">
+						<a href="/#hero-banner">
+							<span>Request a Callback</span>
+						</a>
+					</div>
+				</div>
+
+			<?php } else { ?>
+				<?php if ($buttons) { ?>
+					<div class="button-group-wrapper justify-center">
+						<?php
+						foreach ($buttons as $button) {
+							if ($button['button_link_type']) {
+								$DisplayData->button(array(
+									'link_text' => $button['button_link_text'],
+									'link' => isset($button['button_' . $button['button_link_type']]) ? $button['button_' . $button['button_link_type']] : '',
+									'link_type' => $button['button_link_type'],
+									'link_action' => $button['button_link_action'],
+									'class' => $button['button_link_color'] . ' button-link'
+								));
+							}
+						}
+						?>
+					</div>
+
+				<?php } ?>
+			<?php } ?>
 			<?php if ($info_is_slider) { ?>
 				<div class="info-slider-box mb-0" data-aos="fade-in">
 					<div class="swiper swiper-info-slider">
@@ -91,41 +125,7 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 						</div>
 					</div>
 				<?php } ?>
-				<?php if (!$custom_button && $info_slider_style == 'style-1 style-3') { ?>
 
-					<div class="button-group-wrapper justify-center">
-						<div class="button-box button-white button-wide-padding">
-							<a href="/get-life-insurance/">
-								<span>Get a Quote</span>
-							</a>
-						</div>
-						<div class="button-box button-accent button-wide-padding">
-							<a href="/#hero-banner">
-								<span>Request a Callback</span>
-							</a>
-						</div>
-					</div>
-
-				<?php } else { ?>
-					<?php if ($buttons) { ?>
-						<div class="button-group-wrapper justify-center">
-							<?php
-							foreach ($buttons as $button) {
-								if ($button['button_link_type']) {
-									$DisplayData->button(array(
-										'link_text' => $button['button_link_text'],
-										'link' => isset($button['button_' . $button['button_link_type']]) ? $button['button_' . $button['button_link_type']] : '',
-										'link_type' => $button['button_link_type'],
-										'link_action' => $button['button_link_action'],
-										'class' => $button['button_link_color'] . ' button-link'
-									));
-								}
-							}
-							?>
-						</div>
-
-					<?php } ?>
-				<?php } ?>
 
 				</div>
 		</div>
