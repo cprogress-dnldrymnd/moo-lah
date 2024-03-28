@@ -21,7 +21,7 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 						$DisplayData->heading(array(
 							'heading' => $module['heading'],
 							'data_aos' => 'fade-up'
-						));
+						), 'mb-3');
 
 						$DisplayData->description(array(
 							'description' => $module['description'],
