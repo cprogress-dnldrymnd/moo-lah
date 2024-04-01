@@ -59,6 +59,7 @@ section.hero-banner {
 		height: 100vw;
 		background-color: var(--white-color);
 		border-radius: 50%;
+		overflow: hidden;
 		@include before {
 			content: '';
 			width: 80%;

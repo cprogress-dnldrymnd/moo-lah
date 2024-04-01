@@ -11629,7 +11629,8 @@ section.hero-banner .circle-2 {
   width: 100vw;
   height: 100vw;
   background-color: var(--white-color);
-  border-radius: 50%; }
+  border-radius: 50%;
+  overflow: hidden; }
   section.hero-banner .circle-2:before {
     content: '';
     width: 80%;
