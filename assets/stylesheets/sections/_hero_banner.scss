@@ -2,7 +2,6 @@ section.hero-banner {
 	.inner {
 		h2 {
 			line-height: 1.2;
-
 		}
 	}
 	input[type="submit"] {
@@ -16,9 +15,9 @@ section.hero-banner {
 			margin-bottom: 1rem;
 		}
 	}
-	
-	.image-box  {
-	    padding: 50%;
+
+	.image-box {
+		padding: 50%;
 		position: relative;
 		border-radius: 50%;
 		overflow: hidden;
@@ -51,28 +50,29 @@ section.hero-banner {
 		position: absolute;
 		bottom: -13vw;
 	}
+	
 	.circle-2 {
 		position: absolute;
 		left: 34vw;
-		top: 20vw;
-		width: 100vw;
+		top: 17vw;
+		width: 130vw;
 		height: 100vw;
-		background-color: var(--white-color);
+		background-color: var(--accent-color-2);
 		border-radius: 50%;
-		overflow: hidden;
 		@include before {
-			content: '';
-			width: 80%;
-			height: 93%;
-			display: block;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			background-color: var(--white-color);
-			border-radius: 0 50% 50% 0;
+			@include before {
+				content: "";
+				width: 80%;
+				height: 93%;
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background-color: var(--white-color);
+				border-radius: 0 50% 50% 0;
+			}
 		}
 	}
-	
 }
 
 section.page-banner {
