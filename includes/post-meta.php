@@ -478,6 +478,7 @@ class ModulesFields extends PostMeta {
 				$this->_select('number_of_columns','Number of Columns', $this->number_of_columns)->set_classes('style-info-slider collapse')->set_width(16.66),
 				$this->_select('info_slider_style', 'Style', $this->style_options)->set_classes('style-info-slider collapse')->set_width(20),
 				$this->_checkbox('info_is_slider', 'Slider')->set_classes('style-info-slider collapse')->set_width(20),
+				$this->_checkbox('has_decoration', 'Has Decoration')->set_classes('style-info-slider collapse')->set_width(20),
 				$this->_checkbox('custom_button', 'Custom Buttons')->set_classes('style-info-slider collapse')->set_width(20),
 				$this->_seperator('html_info_slider', 'CONTENTS', 'data-target="info-slider-content"'),
 				$this->_text('heading', 'Heading')->set_classes('info-slider-content collapse'),
