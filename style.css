@@ -10463,14 +10463,22 @@ ul li:not(:last-child) {
 
 questionmark:after {
   content: ".";
-  color: var(--accent-color);
-  transform: translate(-134%, -3%) scale(1.18);
+  color: var(--accent-color-2);
+  -webkit-transform: translate(-141%, -4%) scale(1.2);
+  -moz-transform: translate(-141%, -4%) scale(1.2);
+  -ms-transform: translate(-141%, -4%) scale(1.2);
+  -o-transform: translate(-141%, -4%) scale(1.2);
+  transform: translate(-141%, -4%) scale(1.2);
   display: inline-block; }
 
 exclamation:after {
   content: ".";
-  color: var(--accent-color);
-  transform: translate(-99%, -3%) scale(1.16);
+  color: var(--accent-color-2);
+  -webkit-transform: translate(-105%, -4%) scale(1.2);
+  -moz-transform: translate(-105%, -4%) scale(1.2);
+  -ms-transform: translate(-105%, -4%) scale(1.2);
+  -o-transform: translate(-105%, -4%) scale(1.2);
+  transform: translate(-105%, -4%) scale(1.2);
   display: inline-block; }
 
 .image-box.circle {

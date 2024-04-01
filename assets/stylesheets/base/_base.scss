@@ -798,16 +798,16 @@ ul {
 questionmark {
     &:after {
         content: ".";
-        color: var(--accent-color);
-        transform: translate(-134%, -3%) scale(1.18);
+        color: var(--accent-color-2);
+       @include transform(translate(-141%, -4%) scale(1.2));
         display: inline-block;
     }
 }
 exclamation {
     &:after {
         content: ".";
-        color: var(--accent-color);
-        transform: translate(-99%, -3%) scale(1.16);
+        color: var(--accent-color-2);
+        @include transform(translate(-105%, -4%) scale(1.2));
         display: inline-block;
     }
 }
