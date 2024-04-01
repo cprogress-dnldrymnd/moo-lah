@@ -11647,6 +11647,9 @@ section.hero-banner .circle-2 {
     background-color: var(--white-color);
     border-radius: 0 50% 50% 0; }
 
+section.page-banner .description-box {
+  max-width: 800px; }
+
 section.not-found {
   padding-top: 50px;
   padding-bottom: 50px;
