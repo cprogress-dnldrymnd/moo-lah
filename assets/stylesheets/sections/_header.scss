@@ -1,19 +1,10 @@
 header {
 	position: relative;
-	z-index: 9;
-	padding-top: 60px;
-	padding-bottom: 20px;
-	@include respond-to(xs-sm) {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		@include padding-top-bottom(1rem);
-	}
 }
 .header-wrapper {
 	z-index: 9;
-
+	padding-top: 60px;
+	padding-bottom: 20px;
 	.container-fluid {
 		--bs-gutter-x: 1.875rem;
 	}
@@ -73,7 +64,13 @@ header {
 			display: none;
 		}
 	}
-	
+	@include respond-to(xs-sm) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		@include padding-top-bottom(1rem);
+	}
 }
 
 .navbar-wrapper.navbar-wrapper {

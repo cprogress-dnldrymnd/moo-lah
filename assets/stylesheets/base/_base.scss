@@ -620,7 +620,7 @@ a {
         .icon-bar {
             display: block;
             height: 2px;
-            background-color: var(--primary-color);
+            background-color: var(--white-color);
             position: absolute;
             width: 100%;
             @include transition(300ms);

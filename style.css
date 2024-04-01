@@ -10349,7 +10349,7 @@ a {
     .navbar-toggler.navbar-toggler .navbar-toggler-icon .icon-bar {
       display: block;
       height: 2px;
-      background-color: var(--primary-color);
+      background-color: var(--white-color);
       position: absolute;
       width: 100%;
       -webkit-transition: 300ms;
@@ -11185,21 +11185,12 @@ h4 {
 /* Header & Footer
 /*-----------------------------------------------------------------------------------*/
 header {
-  position: relative;
+  position: relative; }
+
+.header-wrapper {
   z-index: 9;
   padding-top: 60px;
   padding-bottom: 20px; }
-  @media screen and (max-width: 991px) {
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding-top: 1rem;
-      padding-bottom: 1rem; } }
-
-.header-wrapper {
-  z-index: 9; }
   .header-wrapper .container-fluid {
     --bs-gutter-x: 1.875rem; }
   @media screen and (max-width: 991px) {
@@ -11244,6 +11235,14 @@ header {
   @media screen and (max-width: 575px) {
     .header-wrapper .header-buttons {
       display: none; } }
+  @media screen and (max-width: 991px) {
+    .header-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
 
 .navbar-wrapper.navbar-wrapper {
   /*
