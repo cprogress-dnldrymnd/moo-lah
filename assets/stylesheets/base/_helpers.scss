@@ -99,6 +99,9 @@ h3 {
 .background-secondary {
 	background-color: var(--secondary-color);
 	color: var(--white-color);
+	@include headings {
+		color: inherit;
+	}
 	.cls-1 {
 		fill: var(--white-color);
 	}

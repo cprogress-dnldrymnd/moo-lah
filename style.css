@@ -10857,6 +10857,8 @@ h3.heading-svg svg {
 .background-secondary {
   background-color: var(--secondary-color);
   color: var(--white-color); }
+  .background-secondary h1, .background-secondary h2, .background-secondary h3, .background-secondary h4, .background-secondary h5, .background-secondary h6 {
+    color: inherit; }
   .background-secondary .cls-1 {
     fill: var(--white-color); }
 
