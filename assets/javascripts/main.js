@@ -10,11 +10,11 @@ jQuery(window).scroll(function() {
 	var st = jQuery(this).scrollTop();
 
 	if(st > lastScrollTop) {
-		jQuery('body.single-medicalconditions').addClass('show-sticky-cta');
+		jQuery('body.single-services').addClass('show-sticky-cta');
 		jQuery('.back-top').addClass('display-none');
 
 	} else {
-		jQuery('body.single-medicalconditions').removeClass('show-sticky-cta');
+		jQuery('body.single-services').removeClass('show-sticky-cta');
 	}
 	if(st < 300 ) {
 		jQuery('.back-top').addClass('display-none');

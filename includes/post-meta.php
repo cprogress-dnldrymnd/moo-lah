@@ -694,7 +694,7 @@ $PostMeta = new PostMeta();
 ->add_fields($documentation_fields);*/
 
 /*Container::make( 'theme_options', __( 'Services Settings' ) )
-->set_page_parent('edit.php?post_type=medicalconditions')
+->set_page_parent('edit.php?post_type=services')
 ->add_tab('Button', $Modules->custom_button('services'));*/
 
 /*-----------------------------------------------------------------------------------*/
@@ -702,7 +702,7 @@ $PostMeta = new PostMeta();
 /*-----------------------------------------------------------------------------------*/
 Container::make( 'post_meta', 'Page Options' )
 ->where( 'post_type', '=', 'page' )
-->or_where( 'post_type', '=', 'medicalconditions' )
+->or_where( 'post_type', '=', 'services' )
 ->set_context('side')
 ->add_fields( array(
 	$PostMeta->_checkbox('hide_footer_cta', 'Hide Footer CTA'),
@@ -713,7 +713,7 @@ Container::make( 'post_meta', 'Page Options' )
 /*-----------------------------------------------------------------------------------*/
 Container::make( 'post_meta', 'Page Banner' )
 ->where( 'post_type', '=', 'page' )
-->or_where( 'post_type', '=', 'medicalconditions' )
+->or_where( 'post_type', '=', 'services' )
 ->set_context('side')
 ->add_fields( array(
 	$PostMeta->_checkbox('hide_page_banner', 'Hide Page Banner'),
@@ -739,13 +739,13 @@ Container::make( 'post_meta', 'Page Banner' )
 
 Container::make( 'post_meta', 'After Banner' )
 ->where( 'post_type', '=', 'page' )
-->or_where( 'post_type', '=', 'medicalconditions' )
+->or_where( 'post_type', '=', 'services' )
 ->set_context('side')
 ->add_fields($PostMeta->after_banner_fields());
 
 Container::make( 'post_meta', 'Before Footer' )
 ->where( 'post_type', '=', 'page' )
-->or_where( 'post_type', '=', 'medicalconditions' )
+->or_where( 'post_type', '=', 'services' )
 ->set_context('side')
 ->add_fields($PostMeta->before_footer_fields());
 
@@ -768,7 +768,7 @@ Container::make( 'post_meta', 'Modules' )
 ->where( 'post_template', '=', 'templates/modules.php' )
 ->where( 'post_type', '!=', 'accordions' )
 ->where( 'post_type', '!=', 'galleries' )
-->or_where( 'post_type', '=', 'medicalconditions' )
+->or_where( 'post_type', '=', 'services' )
 ->or_where( 'post_type', '=', 'templates' )
 ->add_fields( array($Modules->modules_post_meta()));
 
@@ -833,7 +833,7 @@ Container::make( 'theme_options', __( 'Settings' ) )
 /* Services
 /*-----------------------------------------------------------------------------------*/
 Container::make( 'theme_options', __( 'Settings' ) )
-->set_page_parent('edit.php?post_type=medicalconditions')
+->set_page_parent('edit.php?post_type=services')
 ->add_fields(array(
 	$PostMeta->_seperator('sticky_cta', 'STICKY CTA'),
 	$PostMeta->_text('sticky_cta_heading', 'Heading'),
@@ -856,7 +856,7 @@ Container::make( 'post_meta', 'Custom CSS / Header Scripts / Footer Scripts' )
 ->set_priority('default')
 ->where( 'post_type', '=', 'post' )
 ->or_where( 'post_type', '=', 'page' )
-->or_where( 'post_type', '=', 'medicalconditions' )
+->or_where( 'post_type', '=', 'services' )
 ->add_fields( array(
 	$PostMeta->_textarea('page_custom_css', 'Custom CSS'),
 	Field::make( 'header_scripts', 'page_header_scripts', __( 'Header Scripts' ) ),

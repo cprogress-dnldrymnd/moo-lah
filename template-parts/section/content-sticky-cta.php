@@ -5,7 +5,7 @@ $Helpers = new Helpers();
 ?>
 
 <section class="cta-sticky background-secondary has-edit">
-	<?= $Helpers->get_edit_url('edit.php?post_type=medicalconditions&page=crb_carbon_fields_container_settings1.php', 'Edit CTA') ?>
+	<?= $Helpers->get_edit_url('edit.php?post_type=services&page=crb_carbon_fields_container_settings1.php', 'Edit CTA') ?>
 
 	<div class="container">
 		<div class="row align-center">
