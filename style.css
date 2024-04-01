@@ -11186,6 +11186,14 @@ h4 {
 /*-----------------------------------------------------------------------------------*/
 header {
   position: relative; }
+  @media screen and (max-width: 991px) {
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
 
 .header-wrapper {
   z-index: 9;
@@ -11235,14 +11243,6 @@ header {
   @media screen and (max-width: 575px) {
     .header-wrapper .header-buttons {
       display: none; } }
-  @media screen and (max-width: 991px) {
-    .header-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding-top: 1rem;
-      padding-bottom: 1rem; } }
 
 .navbar-wrapper.navbar-wrapper {
   /*
