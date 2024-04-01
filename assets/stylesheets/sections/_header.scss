@@ -12,6 +12,7 @@ header {
 		@include respond-to(xs-sm) {
 			flex-direction: row;
 			flex-wrap: nowrap;
+			@include align-items(center);
 		}
 	}
 	.logo-wrapper {
@@ -233,7 +234,7 @@ header {
 				bottom: 0 !important;
 				padding-top: 60px;
 				@include padding-left-right(0);
-				background-color: var(--primary-color);
+				background-color: var(--accent-color);
 				left: -100% !important;
 				z-index: 999;
 				@include transition(300ms);
@@ -283,9 +284,9 @@ header {
 
 .admin-bar {
 	.navbar-wrapper.navbar-wrapper .navbar .navbar-collapse {
-		top: calc(82px + 32px) !important;
-		@include respond-to(xs) {
-			top: calc(63px + 46px) !important;
+		top: calc(85px + 32px) !important;
+		@include respond-to(mobile) {
+			top: calc(82px + 46px) !important;
 		}
 	}
 	.navbar-wrapper.navbar-wrapper.fixed-header {

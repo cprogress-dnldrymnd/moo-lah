@@ -12,13 +12,13 @@ body {
 }
 #main {
     @include respond-to(xs-sm) {
-        margin-top: 80.72px;
+        margin-top: 85px;
     }
     @include respond-to(xs) {
-        margin-top: 62.34px;
+        margin-top: 85px;
     }
     @include respond-to(mobile) {
-        margin-top: 60.34px;
+        margin-top: 82px;
     }
 }
 section {
