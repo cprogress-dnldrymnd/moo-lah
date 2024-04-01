@@ -1183,7 +1183,7 @@ exclamation {
     display: flex;
     align-items: center;
     justify-content: center;
-    i {
+    svg {
         color: var(--white-color);
     }
     &.display-none {

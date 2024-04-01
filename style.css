@@ -10757,8 +10757,9 @@ exclamation:after {
   height: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: var(--white-color); }
+  justify-content: center; }
+  .back-top svg {
+    color: var(--white-color); }
   .back-top.display-none {
     display: none; }
 
