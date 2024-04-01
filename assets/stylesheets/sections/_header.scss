@@ -8,8 +8,13 @@ header {
 	.container-fluid {
 		--bs-gutter-x: 1.875rem;
 	}
+	.header-row {
+		@include respond-to(xs-sm) {
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
+	}
 	.logo-wrapper {
-		
 		.site-logo {
 			display: block;
 			height: 100%;
@@ -23,6 +28,9 @@ header {
 			img {
 				width: 105px;
 				object-fit: contain;
+				@include respond-to(xs-sm) {
+					width: 50px;
+				}
 			}
 			@include respond-to(xs) {
 				max-width: 100px;
@@ -46,7 +54,7 @@ header {
 	.button-box {
 		margin-bottom: 0 !important;
 		a {
-			padding: .9rem 1.75rem;
+			padding: 0.9rem 1.75rem;
 			height: 100%;
 			line-height: 1;
 		}
@@ -115,7 +123,6 @@ header {
 		}
 	}
 
-
 	.navbar {
 		@include padding-top-bottom(0);
 		.navbar-collapse {
@@ -140,7 +147,7 @@ header {
 					&.active {
 						background-color: var(--accent-color);
 						color: var(--white-color);
-						&+.dropdown-menu {
+						& + .dropdown-menu {
 							@include before {
 								border-top: 10px solid var(--accent-color);
 							}
@@ -189,7 +196,6 @@ header {
 						}
 					}
 				}
-				
 			}
 
 			@include respond-to(md-lg) {
@@ -197,7 +203,7 @@ header {
 				@include transform(translateX(-50%));
 				border-radius: 10px;
 				@include before {
-					content: '';
+					content: "";
 					position: absolute;
 					left: 50%;
 					transform: translateX(-50%);
@@ -209,7 +215,7 @@ header {
 					border-top: 10px solid var(--white-color);
 				}
 				@include after {
-					content: '';
+					content: "";
 					position: absolute;
 					top: -15px;
 					height: 21px;
@@ -217,7 +223,6 @@ header {
 					left: 0;
 				}
 			}
-			
 		}
 		@include respond-to(xs-sm) {
 			@include justify-content(flex-end);
@@ -256,7 +261,6 @@ header {
 				@include respond-to(mobile) {
 					top: 65.34px !important;
 				}
-
 			}
 			.mobile-navbar {
 				padding-left: 20px;
@@ -273,7 +277,6 @@ header {
 					}
 				}
 			}
-			
 		}
 	}
 }
@@ -287,7 +290,6 @@ header {
 	}
 	.navbar-wrapper.navbar-wrapper.fixed-header {
 		top: 32px;
-
 	}
 	.header-wrapper {
 		@include respond-to(xs-sm) {

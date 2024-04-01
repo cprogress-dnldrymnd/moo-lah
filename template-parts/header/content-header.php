@@ -58,7 +58,7 @@ $Helpers = new Helpers();
 				</div>
 			<?php } ?>
 			<?php if (wp_is_mobile()) {  ?>
-				<div class="top-col">
+				<div class="top-col col-auto">
 					<div class="column-holder right">
 						<button class="navbar-toggler toggler-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon">
