@@ -140,7 +140,6 @@ new newPostType(array(
 	'name' => 'Services',
 	'singular_name' => 'Service',
 	'icon' => 'dashicons-shield',
-	'rewrite' => array('slug' => 'medical-conditions'),
 	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions','page-attributes'),
 	'hierarchical' => true,
 ));
