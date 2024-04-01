@@ -11666,6 +11666,26 @@ section.hero-banner .circle-2 {
     bottom: 0;
     background-color: var(--white-color);
     border-radius: 0 50% 50% 0; }
+    @media screen and (max-width: 991px) {
+      section.hero-banner .circle-2:before {
+        width: 20%;
+        height: 20%;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%); } }
+  @media (max-width: 1300px) {
+    section.hero-banner .circle-2 {
+      left: 50vw;
+      top: 30vw; } }
+  @media screen and (max-width: 991px) {
+    section.hero-banner .circle-2 {
+      top: auto;
+      bottom: -250px;
+      right: -250px;
+      left: auto;
+      width: 500px;
+      height: 500px; } }
 
 section.page-banner .description-box {
   max-width: 800px; }
