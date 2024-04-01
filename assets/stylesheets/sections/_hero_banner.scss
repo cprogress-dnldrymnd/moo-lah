@@ -42,6 +42,15 @@ section.hero-banner {
 			}
 		}
 	}
+	.circle {
+		width: 22vw;
+		height: 22vw;
+		background-color: var(--accent-color-2);
+		border-radius: 50%;
+		left: -11vw;
+		position: absolute;
+		bottom: -13vw;
+	}
 }
 
 section.page-banner {
