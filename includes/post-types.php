@@ -134,15 +134,6 @@ class newTaxonomy {
     
 }
 
-new newPostType(array(
-	'name' => 'Medical Conditions',
-	'singular_name' => 'Medical Condition',
-	'icon' => 'dashicons-shield',
-	'rewrite' => array('slug' => 'medical-conditions'),
-	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions','page-attributes'),
-	'hierarchical' => true,
-));
-
 
 
 new newPostType(array(
