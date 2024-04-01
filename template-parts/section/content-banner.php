@@ -3,7 +3,7 @@ $DisplayData = new DisplayData();
 
 if(!carbon_get_the_post_meta('hide_page_banner')) {
 	?>
-	<section id="page-banner" class="page-banner align-center background-image-cover overlay gradient-overlay-top-to-bottom pt-medium pb-medium">
+	<section id="page-banner" class="page-banner align-center background-image-cover overlay gradient-overlay-top-to-bottom pt-medium pb-medium background-accent">
 		<div class="container">
 			<div class="content-holder-smaller color-white">
 				<?php 	
