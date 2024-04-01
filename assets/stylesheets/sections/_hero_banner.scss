@@ -59,16 +59,19 @@ section.hero-banner {
 		height: 100vw;
 		background-color: var(--white-color);
 		border-radius: 50%;
+		@include before {
+			content: '';
+			width: 80%;
+			height: 93%;
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: var(--white-color);
+			border-radius: 0 50% 50% 0;
+		}
 	}
-	.circle-3 {
-		position: absolute;
-		left: 34vw;
-		top: 17vw;
-		width: 130vw;
-		height: 100vw;
-		background-color: var(--accent-color-2);
-		border-radius: 50%;
-	}
+	
 }
 
 section.page-banner {
