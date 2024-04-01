@@ -10986,6 +10986,9 @@ h3.heading-svg svg {
 .gradient-overlay:before {
   background: transparent linear-gradient(180deg, #010054BF 0%, #01006C80 100%); }
 
+.gradient-overlay-top-to-bottom:before {
+  background: linear-gradient(180deg, #019292 0%, rgba(1, 146, 146, 0.5914740896) 100%); }
+
 .primary-overlay:before {
   background-color: rgba(1, 0, 108, 0.75); }
 

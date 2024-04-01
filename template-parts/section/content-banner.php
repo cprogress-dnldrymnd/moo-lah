@@ -3,14 +3,14 @@ $DisplayData = new DisplayData();
 
 if(!carbon_get_the_post_meta('hide_page_banner')) {
 	?>
-	<section id="page-banner" class="page-banner align-center background-image-cover overlay primary-overlay pt-medium pb-medium">
+	<section id="page-banner" class="page-banner align-center background-image-cover overlay gradient-overlay-top-to-bottom pt-medium pb-medium">
 		<div class="container">
 			<div class="content-holder-smaller color-white">
 				<?php 	
 				$DisplayData->title();
 				$basename = basename(get_page_template());
 				?>
-				<?php if(get_the_content() && (basename(get_page_template()) != 'page.php') || get_post_type() == 'services') { ?>
+				<?php if(get_the_content() && ($basename != 'page.php') || get_post_type() == 'services') { ?>
 					<div class="description-box">
 						<?php the_content() ?>
 					</div>
@@ -45,3 +45,4 @@ if(!carbon_get_the_post_meta('hide_page_banner')) {
 		}
 	</style>
 	<?php } ?>
+	
