@@ -37,12 +37,6 @@ if(!carbon_get_the_post_meta('hide_page_banner')) {
 			</div>
 		</div>
 	</section>
-<?php }  else { ?>
-	<style>
-		.navbar-wrapper {
-			border-bottom: 1px solid var(--border-color);
-			border-top: 1px solid var(--border-color);
-		}
-	</style>
-	<?php } ?>
+<?php }   ?>
+
 	
