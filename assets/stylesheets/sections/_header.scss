@@ -1,5 +1,8 @@
 header {
 	position: relative;
+	z-index: 9;
+	padding-top: 60px;
+	padding-bottom: 20px;
 	@include respond-to(xs-sm) {
 		position: fixed;
 		top: 0;
@@ -10,8 +13,7 @@ header {
 }
 .header-wrapper {
 	z-index: 9;
-	padding-top: 60px;
-	padding-bottom: 20px;
+
 	.container-fluid {
 		--bs-gutter-x: 1.875rem;
 	}
