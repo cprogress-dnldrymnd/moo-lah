@@ -1,5 +1,6 @@
 <?php
 $DisplayData = new DisplayData;
+$Helpers = new Helpers();
 $container = $module['container'];
 $text_align = $module['text_align'];
 $info_slider = $module['info_slider'];
@@ -8,11 +9,13 @@ $info_is_slider = $module['info_is_slider'];
 $number_of_columns = $module['number_of_columns'];
 $custom_button = $module['custom_button'];
 $buttons = $module['buttons'];
-$Helpers = new Helpers();
+$has_decoration = $module['has_decoration'];
+$has_decoration_class = $has_decoration ? 'has-decoration' : '';
 $section_classes = array(
 	$module['background'],
 	$module['padding_top'],
 	$module['padding_bottom'],
+	$has_decoration_class
 );
 $number_of_columns_val = 12 / $number_of_columns;
 $number_of_columns_class = 'col-lg-' . $number_of_columns_val;
