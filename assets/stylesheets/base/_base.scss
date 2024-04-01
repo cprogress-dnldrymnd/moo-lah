@@ -792,14 +792,13 @@ ul {
     &.style-2 {
         border: 3px solid var(--secondary-color);
     }
-  
 }
 
 questionmark {
     &:after {
         content: ".";
         color: var(--accent-color-2);
-       @include transform(translate(-141%, -4%) scale(1.2));
+        @include transform(translate(-141%, -4%) scale(1.2));
         display: inline-block;
     }
 }
@@ -1170,5 +1169,24 @@ exclamation {
     }
     h2 {
         margin-bottom: 2.5rem;
+    }
+}
+
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: var(--accent-color-2);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        color: var(--white-color);
+    }
+    &.display-none {
+        display: none;
     }
 }

@@ -10747,6 +10747,21 @@ exclamation:after {
 .the-content h2 {
   margin-bottom: 2.5rem; }
 
+.back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: var(--accent-color-2);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color); }
+  .back-top.display-none {
+    display: none; }
+
 @font-face {
   font-family: "Hans Kendrick";
   src: url("./assets/fonts/HansKendrick/HansKendrick-Light.eot");
