@@ -12,6 +12,7 @@ $id = $module['id'] != '' ?  $module['id'] : $section_id;
 
 ?>
 <section id="<?= $id ?>" class="hero-banner <?php $DisplayData->get_classes($section_classes) ?>">
+	<div class="circle" data-aos="zoom-in" data-aos-duration="3000"></div>
 	<div class="<?= $container ?>">
 		<div class="inner content-holder <?= $text_align ?> color-white">
 			<div class="row g-4 align-items-center">
