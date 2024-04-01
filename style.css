@@ -11792,6 +11792,15 @@ section.info-box-section {
     left: -36vw;
     top: 32vw;
     border: 20px solid; }
+  section.info-box-section.has-decoration:before {
+    content: '';
+    position: absolute;
+    width: 14vw;
+    height: 14vw;
+    background-color: var(--accent-color-2);
+    right: -10vw;
+    bottom: 0;
+    border-radius: 50%; }
 
 section.testimonials {
   border-top: 1px solid var(--border-color); }

@@ -111,4 +111,16 @@ section.info-box-section {
 		top: 32vw;
 		border: 20px solid;
 	}
+	&.has-decoration {
+		&:before {
+			content: '';
+			position: absolute;
+			width: 14vw;
+			height: 14vw;
+			background-color: var(--accent-color-2);
+			right: -10vw;
+			bottom: 0;
+			border-radius: 50%;
+		}
+	}
 }
