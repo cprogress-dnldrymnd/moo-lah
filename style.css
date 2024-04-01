@@ -11630,7 +11630,7 @@ section.hero-banner .circle-2 {
   height: 100vw;
   background-color: var(--accent-color-2);
   border-radius: 50%; }
-  section.hero-banner .circle-2:before:before {
+  section.hero-banner .circle-2:before {
     content: "";
     width: 80%;
     height: 93%;
