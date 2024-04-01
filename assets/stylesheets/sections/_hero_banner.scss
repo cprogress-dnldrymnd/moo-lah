@@ -51,6 +51,24 @@ section.hero-banner {
 		position: absolute;
 		bottom: -13vw;
 	}
+	.circle-2 {
+		position: absolute;
+		left: 34vw;
+		top: 20vw;
+		width: 100vw;
+		height: 100vw;
+		background-color: var(--white-color);
+		border-radius: 50%;
+	}
+	.cirlce-3 {
+		position: absolute;
+		left: 34vw;
+		top: 17vw;
+		width: 130vw;
+		height: 100vw;
+		background-color: var(--accent-color-2);
+		border-radius: 50%;
+	}
 }
 
 section.page-banner {

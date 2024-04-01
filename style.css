@@ -11622,6 +11622,14 @@ section.hero-banner .circle {
   left: -11vw;
   position: absolute;
   bottom: -13vw; }
+section.hero-banner .circle-2 {
+  position: absolute;
+  left: 34vw;
+  top: 20vw;
+  width: 100vw;
+  height: 100vw;
+  background-color: var(--white-color);
+  border-radius: 50%; }
 
 section.page-banner {
   min-height: 385px; }
