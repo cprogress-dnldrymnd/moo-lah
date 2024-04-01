@@ -146,6 +146,17 @@ new newPostType(array(
 
 
 new newPostType(array(
+	'name' => 'Services',
+	'singular_name' => 'Services',
+	'icon' => 'dashicons-shield',
+	'rewrite' => array('slug' => 'medical-conditions'),
+	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions','page-attributes'),
+	'hierarchical' => true,
+));
+
+
+
+new newPostType(array(
 	'name' => 'Accordions',
 	'singular_name' => 'Accordion',
 	'icon' => 'dashicons-menu',
